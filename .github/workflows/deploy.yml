@@ -36,9 +36,7 @@ jobs:
 
       # ── D2 ダイアグラム → PNG ────────────────────────────────────
       - name: Install D2
-        run: curl -fsSL https://d2lang.com/install.sh | sh -s -- --dry-run=false
-        env:
-          D2_VERSION: latest
+        run: curl -fsSL https://d2lang.com/install.sh | sh -s --
 
       - name: Build D2 diagrams
         run: |
