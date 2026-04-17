@@ -1,0 +1,37 @@
+graph TB
+    subgraph Input ["入力処理"]
+        A[音声入力\n16kHz PCM]
+        B[Log-Mel\nSpectrogram\n80ch × 3000frames]
+        A --> B
+    end
+
+    subgraph Encoder ["Encoderブロック × N"]
+        C[Conv1D × 2\nステム]
+        D[Positional\nEmbedding]
+        E[Multi-Head\nSelf-Attention]
+        F[Feed Forward\nNetwork]
+        B --> C --> D --> E --> F
+    end
+
+    subgraph Decoder ["Decoderブロック × N"]
+        G[Token\nEmbedding]
+        H[Masked\nSelf-Attention]
+        I[Cross-Attention\n← Encoder出力]
+        J[Feed Forward\nNetwork]
+        G --> H --> I --> J
+    end
+
+    subgraph Output ["出力"]
+        K[Linear + Softmax]
+        L[テキストトークン]
+        J --> K --> L
+    end
+
+    subgraph SpecialTokens ["特殊トークン（タスク制御）"]
+        T1["&lt;|transcribe|&gt;"]
+        T2["&lt;|translate|&gt;"]
+        T3["&lt;|ja|&gt; / &lt;|en|&gt; ..."]
+    end
+
+    F --> I
+    SpecialTokens --> G
