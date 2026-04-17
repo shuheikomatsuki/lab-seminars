@@ -17,20 +17,22 @@ jobs:
         uses: actions/checkout@v4
 
       # ── Marp スライド → HTML + PDF ──────────────────────────────
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
       - name: Build Marp slides
         run: |
-          docker run --rm \
-            -v "${{ github.workspace }}:/workspace" \
-            -w /workspace \
-            marpteam/marp-cli:latest \
-            /bin/sh -c '
-              find docs/sessions -name "slides.md" | while read f; do
-                dir=$(dirname "$f")
-                echo "Building: $f"
-                marp "$f" --html --allow-local-files -o "$dir/slides.html"
-                marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"
-              done
-            '
+          find docs/sessions -name "slides.md" | while read f; do
+            dir=$(dirname "$f")
+            echo "Building: $f"
+            marp "$f" --html --allow-local-files -o "$dir/slides.html"
+            marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"
+          done
 
       # ── D2 ダイアグラム → PNG ────────────────────────────────────
       - name: Install D2
