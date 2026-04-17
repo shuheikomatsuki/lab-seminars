@@ -1,0 +1,66 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── Marp スライド → HTML + PDF ──────────────────────────────
+      - name: Build Marp slides
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}:/workspace" \
+            -w /workspace \
+            marpteam/marp-cli:latest \
+            /bin/sh -c '
+              find docs/sessions -name "slides.md" | while read f; do
+                dir=$(dirname "$f")
+                echo "Building: $f"
+                marp "$f" --html --allow-local-files -o "$dir/slides.html"
+                marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"
+              done
+            '
+
+      # ── D2 ダイアグラム → PNG ────────────────────────────────────
+      - name: Install D2
+        run: curl -fsSL https://d2lang.com/install.sh | sh -s -- --dry-run=false
+        env:
+          D2_VERSION: latest
+
+      - name: Build D2 diagrams
+        run: |
+          find docs/sessions -name "*.d2" | while read f; do
+            echo "Building: $f"
+            d2 "$f" "${f%.d2}.png"
+          done
+
+      # ── MkDocs ビルド ────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Build MkDocs site
+        run: mkdocs build --strict
+
+      # ── GitHub Pages にデプロイ ──────────────────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
