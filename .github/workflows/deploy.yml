@@ -30,8 +30,8 @@ jobs:
           while IFS= read -r f; do
             dir=$(dirname "$f")
             echo "Building: $f"
-            marp "$f" --html --allow-local-files -o "$dir/slides.html"
-            marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"
+            marp "$f" --html --allow-local-files -o "$dir/slides.html" </dev/null
+            marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"  </dev/null
           done < <(find docs/sessions -name "slides.md")
 
       # ── D2 ダイアグラム → PNG ────────────────────────────────────
