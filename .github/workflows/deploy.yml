@@ -27,12 +27,12 @@ jobs:
 
       - name: Build Marp slides
         run: |
-          find docs/sessions -name "slides.md" | while read f; do
+          while IFS= read -r f; do
             dir=$(dirname "$f")
             echo "Building: $f"
             marp "$f" --html --allow-local-files -o "$dir/slides.html"
             marp "$f" --pdf  --allow-local-files -o "$dir/slides.pdf"
-          done
+          done < <(find docs/sessions -name "slides.md")
 
       # ── D2 ダイアグラム → PNG ────────────────────────────────────
       - name: Install D2
