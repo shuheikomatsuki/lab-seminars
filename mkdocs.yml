@@ -66,3 +66,4 @@ nav:
   - ホーム: index.md
   - セッション:
     - 2026-04-18 DL Ch6.1 固定基底関数の限界: sessions/2026-04-18-dl-ch6-1/index.md
+    - 2026-04-26 DL Ch6.2 多層ネットワーク: sessions/2026-04-26-6-2/index.md
