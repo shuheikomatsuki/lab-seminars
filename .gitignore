@@ -7,3 +7,6 @@ site/
 
 # macOS
 .DS_Store
+
+# 論文・テキストPDF（各マシンで個別に管理）
+pdfs/
