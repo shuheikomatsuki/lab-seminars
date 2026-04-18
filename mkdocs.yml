@@ -52,14 +52,17 @@ markdown_extensions:
   - md_in_html
   - tables
   - footnotes
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - ホーム: index.md
   - セッション:
-    - 2025-04-18 Whisper: sessions/2025-04-18-whisper/index.md
+    - 2026-04-18 DL Ch6.1 固定基底関数の限界: sessions/2026-04-18-dl-ch6-1/index.md

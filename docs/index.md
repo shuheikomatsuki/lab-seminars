@@ -9,7 +9,7 @@
 
 | 日付 | タイトル | 発表資料 |
 |------|----------|----------|
-| 2025-04-18 | [Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](sessions/2025-04-18-whisper/index.md) | [スライド](sessions/2025-04-18-whisper/slides.html) |
+| 2026-04-18 | [DL Ch6.1 固定基底関数の限界](sessions/2026-04-18-dl-ch6-1/index.md) | [スライド](sessions/2026-04-18-dl-ch6-1/slides.html) |
 
 ---
 
