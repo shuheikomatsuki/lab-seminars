@@ -4,7 +4,7 @@
 
 Claude Code のスキルを活用し、PDF を渡すだけで記事・Marp スライド・図が一括生成されます。
 
-**サイト URL:** https://komashuhei.github.io/lab-seminars/
+**サイト URL:** https://shuheikomatsuki.github.io/lab-seminars/
 
 ---
 
