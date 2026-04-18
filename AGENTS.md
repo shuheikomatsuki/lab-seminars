@@ -37,22 +37,26 @@
 
 **引数：**
 ```
-<slug> <pdf-path> [display-title] [YYYY-MM-DD]
+[slug] <pdf-path> [display-title] [YYYY-MM-DD]
 ```
+
+`slug` は省略可能。省略時はPDFファイル名から自動生成。`date` 省略時は `seminar_config.yml` の `next_seminar_date` を使用（未設定なら今日の日付）。
 
 **実行フロー：**
 
+0. **設定ファイル読み込み** — `seminar_config.yml` から `next_seminar_date`・`default_presenter` を取得
 1. **PDF 読み込み** — 章・節構造、主要概念、数式、出典を把握する
 2. **ディレクトリ作成** — `docs/sessions/<DATE>-<slug>/diagrams/`
-3. **index.md 生成** — 自己完結した解説記事
+3. **index.md 生成** — 自己完結した解説記事（`default_presenter` を担当者欄に挿入）
    - LaTeX 数式（変数の意味を添える）
    - Mermaid 図（最低1つ）
    - admonition で重要点を強調
    - 比較テーブル
-4. **slides.md 生成** — Marp スライド（10〜15枚）
+4. **slides.md 生成** — Marp スライド（10〜15枚、`default_presenter` を発表者欄に挿入）
 5. **architecture.mmd 生成** — 概要を俯瞰する Mermaid 図
 6. **mkdocs.yml 更新** — `nav:` → `セッション:` に追加
 7. **docs/index.md 更新** — セッション一覧テーブルに追加
+8. **ビルド確認** — `uv run mkdocs build --strict` を実行し、エラーがあれば修正
 
 **テンプレート参照先：**
 - `index.md` → `.claude/skills/add-seminar-session/assets/index_template.md`
@@ -140,6 +144,7 @@ lab-seminars/
 │       └── assets/
 ├── .github/workflows/deploy.yml     # CI/CD（Marp変換・MkDocsビルド・Pages公開）
 ├── pdfs/                            # PDF置き場（gitignore対象）
+├── seminar_config.yml               # 開催日・発表者のデフォルト設定（任意）
 ├── mkdocs.yml
 ├── pyproject.toml
 ├── CLAUDE.md

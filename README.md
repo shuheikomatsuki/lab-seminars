@@ -48,23 +48,23 @@ http://127.0.0.1:8000 でプレビューできます。
 PDF から解説記事・スライド・図を自動生成し、サイトに追加します。
 
 ```
-/add-seminar-session <slug> <pdf-path> [display-title] [YYYY-MM-DD]
+/add-seminar-session [slug] <pdf-path> [display-title] [YYYY-MM-DD]
 ```
 
 **引数：**
 
 | 引数 | 必須 | 説明 |
 |------|------|------|
-| `slug` | ✅ | URLセーフな識別子（例: `dl-ch6-2`, `attention-is-all-you-need`）|
+| `slug` | - | URLセーフな識別子（例: `dl-ch6-2`, `attention-is-all-you-need`）。省略時はPDFファイル名から自動生成 |
 | `pdf-path` | ✅ | PDF へのパス（`pdfs/` 相対パスまたは絶対パス）|
 | `display-title` | - | ナビゲーションに表示するタイトル。省略時はPDF内容から自動推測 |
-| `date` | - | `YYYY-MM-DD` 形式。省略時は今日の日付 |
+| `date` | - | `YYYY-MM-DD` 形式。省略時は `seminar_config.yml` の `next_seminar_date`、未設定なら今日の日付 |
 
 **例：**
 
 ```
 /add-seminar-session dl-ch6-2 pdfs/bishop-dl.pdf "DL Ch6.2 カーネル法" 2026-04-25
-/add-seminar-session attention pdfs/attention-is-all-you-need.pdf
+/add-seminar-session pdfs/attention-is-all-you-need.pdf
 ```
 
 **生成されるファイル：**
@@ -89,6 +89,22 @@ docs/sessions/<DATE>-<slug>/
 
 ---
 
+## 設定ファイル（`seminar_config.yml`）
+
+プロジェクトルートに `seminar_config.yml` を置くと、スキル実行時の既定値を設定できます。
+
+```yaml
+next_seminar_date: 2026-04-25   # 次回開催日（date引数省略時に使用）
+default_presenter: 山田太郎     # 発表者名（担当:欄に自動挿入）
+```
+
+| キー | 説明 | 省略時 |
+|------|------|--------|
+| `next_seminar_date` | セッションに使用する開催日 | 今日の日付 |
+| `default_presenter` | 解説記事・スライドの発表者名 | `（担当者名）` プレースホルダー |
+
+---
+
 ## ディレクトリ構成
 
 ```
@@ -107,6 +123,7 @@ lab-seminars/
 │   └── workflows/
 │       └── deploy.yml        # GitHub Pages 自動デプロイ
 ├── pdfs/                     # PDF置き場（.gitignore で除外）
+├── seminar_config.yml        # 開催日・発表者のデフォルト設定
 ├── mkdocs.yml
 └── pyproject.toml
 ```

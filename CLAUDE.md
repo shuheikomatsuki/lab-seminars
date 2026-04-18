@@ -23,8 +23,10 @@
 PDF から新しいセッションを追加するメインスキル。
 
 ```
-/add-seminar-session <slug> <pdf-path> [display-title] [YYYY-MM-DD]
+/add-seminar-session [slug] <pdf-path> [display-title] [YYYY-MM-DD]
 ```
+
+`slug` は省略可能（省略時はPDFファイル名から自動生成）。`date` 省略時は `seminar_config.yml` の `next_seminar_date` を使用。
 
 **生成物:**
 - `docs/sessions/<DATE>-<slug>/index.md` — 自己完結した解説記事
@@ -60,6 +62,7 @@ docs/sessions/<DATE>-<slug>/   各セッションのコンテンツ
     assets/
 
 pdfs/                          PDF置き場（.gitignore で除外、コミット不可）
+seminar_config.yml             開催日・発表者のデフォルト設定（任意）
 ```
 
 ---
