@@ -10,10 +10,9 @@
 | 日付 | タイトル | 発表資料 |
 |------|----------|----------|
 | 2026-04-18 | [DL Ch6.1 固定基底関数の限界](sessions/2026-04-18-dl-ch6-1/index.md) | [スライド](sessions/2026-04-18-dl-ch6-1/slides.html) |
-| 2026-05-01 | [DL Ch6.1 固定基底関数の限界](sessions/2026-05-01-dl-ch6-1-test/index.md) | [スライド](sessions/2026-05-01-dl-ch6-1-test/slides.html) |
 
 ---
 
 ## 使い方
 
-新しいセッションを追加するには [テンプレート](https://github.com/komashuhei/lab-seminars/tree/main/templates/session) を参照してください。
+新しいセッションを追加するには [テンプレート](https://github.com/shuheikomatsuki/lab-seminars/tree/main/templates/session) を参照してください。
