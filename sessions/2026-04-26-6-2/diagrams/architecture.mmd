@@ -1,0 +1,32 @@
+%%{init: {"theme": "default"}}%%
+graph TD
+    subgraph ActFuncs["隠れユニット活性化関数の系譜"]
+        direction TB
+        S["Sigmoid σ(a)<br/>（1980年代〜）"]
+        T["tanh(a)<br/>（Sigmoid の線形変換）"]
+        HT["Hard tanh<br/>max(-1, min(1, a))"]
+        SP["Softplus<br/>ln(1 + exp(a))"]
+        ReLU["ReLU<br/>max(0, a)<br/>（2012〜 事実上デフォルト）"]
+        LR["Leaky ReLU<br/>max(0,a) + α·min(0,a)"]
+        ABS["Absolute<br/>|a|  (α = -1)"]
+    end
+
+    subgraph Problems["問題点"]
+        VG["勾配消失<br/>Vanishing Gradient"]
+        DR["Dying ReLU<br/>（負側勾配 = 0）"]
+    end
+
+    S -->|"勾配消失あり"| VG
+    T -->|"勾配消失あり"| VG
+    VG -->|"解決"| ReLU
+    ReLU -->|"滑らか版"| SP
+    ReLU -->|"負側勾配なし"| DR
+    DR -->|"解決"| LR
+    LR -->|"α = -1 の特殊ケース"| ABS
+    T -->|"Hard版"| HT
+
+    style ReLU fill:#dcfce7,stroke:#16a34a
+    style VG fill:#fee2e2,stroke:#dc2626
+    style DR fill:#fef9c3,stroke:#ca8a04
+    style S fill:#e0e7ff
+    style T fill:#e0e7ff
