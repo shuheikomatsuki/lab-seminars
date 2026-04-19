@@ -50,12 +50,12 @@
 - `mkdocs.yml` の該当セッショングループにサブページを追加
 - `docs/sessions/<SESSION_ID>/index.md` のサブセクション一覧テーブルを更新
 
-### `/add-seminar-paper`
+### `/add-paper-session`
 
 論文紹介セッションを追加するスキル（将来使用予定）。
 
 ```
-/add-seminar-paper [slug] <pdf-path> [display-title] [YYYY-MM-DD]
+/add-paper-session [slug] <pdf-path> [display-title] [YYYY-MM-DD]
 ```
 
 教科書と異なり、Abstract/Method/Experiments/Limitationsの論文固有の構成で記事を生成します。
@@ -85,7 +85,7 @@ docs/sessions/<DATE>-<slug>/   各セッションのコンテンツ
       slides_template.md       スライド用テンプレート
     references/
       session_format.md        navフォーマット仕様（ネスト構造含む）
-  add-seminar-paper/
+  add-paper-session/
     SKILL.md
     assets/
   setup-seminar-project/
