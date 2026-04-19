@@ -5,6 +5,16 @@ paginate: true
 math: katex
 header: "研究室勉強会 2026-04-26"
 footer: "Bishop & Bishop, *Deep Learning*, Springer 2024, §6.2"
+style: |
+  section {
+    font-size: 24px;
+  }
+  section h1 {
+    font-size: 44px;
+  }
+  section h2 {
+    font-size: 32px;
+  }
 ---
 
 # 6.2 多層ネットワーク

@@ -5,6 +5,16 @@ paginate: true
 header: "研究室勉強会 2025-04-18"
 footer: "Bishop & Bishop, Deep Learning §6.1"
 math: katex
+style: |
+  section {
+    font-size: 24px;
+  }
+  section h1 {
+    font-size: 44px;
+  }
+  section h2 {
+    font-size: 32px;
+  }
 ---
 
 # 6.1 固定基底関数の限界
