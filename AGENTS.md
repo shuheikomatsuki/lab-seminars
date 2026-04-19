@@ -103,6 +103,7 @@
 - `mkdocs.yml` 編集時はインデントをスペース4つで統一する
 - セッション ID は `YYYY-MM-DD-<slug>` 形式を厳守する
 - スキルのテンプレートファイル（`assets/`）は参照のみ。直接編集しない
+- `.claude/skills/` と `.codex/skills/` は `lab-seminar-skills` リポジトリの git submodule。テンプレートを修正する場合は `lab-seminar-skills` リポジトリを直接編集し、コミット・プッシュ後に `git submodule update --remote` でサブモジュールを更新する。submodule 内のファイルを直接編集してはならない
 
 ### nav エントリのフォーマット
 
