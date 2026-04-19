@@ -127,6 +127,10 @@ $$\text{ReLU}: h(a) = \max(0, a)$$
 $$\text{Leaky ReLU}: h(a) = \max(0, a) + \alpha \min(0, a) \quad (0 < \alpha < 1)$$
 $$\text{softplus}: h(a) = \ln(1 + e^a) \quad \text{（ReLUの滑らか版）}$$
 
+---
+
+## 6.2.3 活性化関数 — 比較
+
 | 関数 | 正側勾配 | 負側勾配 | 備考 |
 |------|---------|---------|------|
 | sigmoid / tanh | 小さい | 小さい | 勾配消失 |
