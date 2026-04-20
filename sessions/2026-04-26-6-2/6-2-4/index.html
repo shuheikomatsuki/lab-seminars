@@ -12,13 +12,11 @@
         <meta name="author" content="Lab Members">
       
       
-        <link rel="canonical" href="https://shuheikomatsuki.github.io/lab-seminars/sessions/2026-04-26-6-2/6-2-3/">
+        <link rel="canonical" href="https://shuheikomatsuki.github.io/lab-seminars/sessions/2026-04-26-6-2/6-2-4/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../6-2-3/">
       
-      
-        <link rel="next" href="../6-2-4/">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>隠れユニット活性化関数 - 研究室勉強会</title>
+        <title>重み空間の対称性 - 研究室勉強会</title>
       
     
     
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#623" class="md-skip">
+        <a href="#624" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              隠れユニット活性化関数
+              重み空間の対称性
             
           </span>
         </div>
@@ -413,6 +411,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-2-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    隠れユニット活性化関数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -432,7 +458,7 @@
   <span class="md-ellipsis">
     
   
-    隠れユニット活性化関数
+    重み空間の対称性
   
 
     
@@ -450,7 +476,7 @@
   <span class="md-ellipsis">
     
   
-    隠れユニット活性化関数
+    重み空間の対称性
   
 
     
@@ -490,47 +516,41 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        なぜ線形活性化関数では不十分か
+        重み空間の対称性とは何か
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="なぜ線形活性化関数では不十分か">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        線形変換の合成は線形
+        例として扱うネットワーク
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 符号反転対称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 符号反転対称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        各活性化関数の詳細
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="各活性化関数の詳細">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#logistic-sigmoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logistic Sigmoid
+        変換
       
     </span>
   </a>
@@ -538,82 +558,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tanh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tanh
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hard-tanhcollobert-2004" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hard tanh（Collobert, 2004）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softplus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Softplus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relurectified-linear-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ReLU（Rectified Linear Unit）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leaky-relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Leaky ReLU
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体例・可視化
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="具体例・可視化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配消失から ReLU への系譜
+        直感
       
     </span>
   </a>
@@ -624,18 +572,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        活性化関数の比較表
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配の挙動（数式確認）
+        何通りあるか
       
     </span>
   </a>
@@ -648,7 +585,140 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 入れ替え対称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 入れ替え対称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数式で見る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        何通りあるか
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総対称性因子
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多層ネットワークの場合
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tanh だけの話ではない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実用上の意味
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="実用上の意味">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通常の勾配学習では大きな問題になりにくい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ベイズ的手法では重要になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体例：隠れユニット2個の場合
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -659,7 +729,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       
         担当者の議論・疑問点
@@ -673,34 +743,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6-2-4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    重み空間の対称性
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -762,47 +804,41 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        なぜ線形活性化関数では不十分か
+        重み空間の対称性とは何か
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="なぜ線形活性化関数では不十分か">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        線形変換の合成は線形
+        例として扱うネットワーク
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 符号反転対称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 符号反転対称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        各活性化関数の詳細
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="各活性化関数の詳細">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#logistic-sigmoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logistic Sigmoid
+        変換
       
     </span>
   </a>
@@ -810,82 +846,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tanh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tanh
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hard-tanhcollobert-2004" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hard tanh（Collobert, 2004）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softplus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Softplus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relurectified-linear-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ReLU（Rectified Linear Unit）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leaky-relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Leaky ReLU
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体例・可視化
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="具体例・可視化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配消失から ReLU への系譜
+        直感
       
     </span>
   </a>
@@ -896,18 +860,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        活性化関数の比較表
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配の挙動（数式確認）
+        何通りあるか
       
     </span>
   </a>
@@ -920,7 +873,140 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 入れ替え対称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 入れ替え対称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数式で見る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        何通りあるか
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        総対称性因子
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多層ネットワークの場合
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tanh だけの話ではない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実用上の意味
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="実用上の意味">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通常の勾配学習では大きな問題になりにくい
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ベイズ的手法では重要になる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体例：隠れユニット2個の場合
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -931,7 +1017,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       
         担当者の議論・疑問点
@@ -958,186 +1044,290 @@
 
 
 
-<h1 id="623">6.2.3 隠れユニット活性化関数</h1>
-<p><strong>出典:</strong> C. M. Bishop, H. Bishop, <em>Deep Learning</em>, Springer 2024, §6.2.3
-<strong>担当:</strong> 駒月柊平
+<h1 id="624">6.2.4 重み空間の対称性</h1>
+<p><strong>出典:</strong> C. M. Bishop, H. Bishop, <em>Deep Learning</em>, Springer 2024, §6.2.4<br />
+<strong>担当:</strong> 駒月柊平<br />
 <strong>日付:</strong> 2026-04-26</p>
-<p><a href="../">← 概要に戻る</a>
- / <a href="../6-2-4/">次: 6.2.4 重み空間の対称性 →</a></p>
+<p><a href="../">← 概要に戻る</a></p>
 <hr />
 <h2 id="_1">このサブセクションの位置づけ</h2>
-<p>§6.2.2 では「二層ネットワークは万能近似器（Universal Approximator）である」という強力な理論的保証を学んだ。しかし、その保証はあくまで<strong>適切な活性化関数が選ばれていること</strong>を前提としている。本節では、隠れユニットの活性化関数として何が使えて、何が良い選択なのかを系統的に整理する。</p>
+<p>§6.2.3 では隠れユニットの活性化関数を見た。特に tanh は奇関数であり、</p>
+<div class="arithmatex">\[
+\tanh(-a) = -\tanh(a)
+\]</div>
+<p>を満たす。この性質は、ネットワークの<strong>重みの表し方</strong>に冗長性を生む。§6.2.4 の主題は、フィードフォワードネットワークでは「異なる重みベクトル」が「同じ入出力関数」を表すことがある、という点である。</p>
 <div class="admonition abstract">
 <p class="admonition-title">前後の接続</p>
 <ul>
-<li><strong>← 前（§6.2.2 普遍近似定理）</strong>: 万能近似の保証は「微分可能な活性化関数」という条件に基づく。ではどんな関数が有効か？→ 本節で整理</li>
-<li><strong>→ 次（§6.2.4 重み空間の対称性）</strong>: 活性化関数の奇関数性（tanh など）は重み空間の符号反転対称性を生み出す。活性化関数の選択と対称性は密接に関係する</li>
+<li><strong>← 前（§6.2.3 隠れユニット活性化関数）</strong>: tanh の奇関数性や ReLU 系活性化関数の性質を整理した</li>
+<li><strong>→ 次（§6.3 深層ネットワーク）</strong>: 二層ネットワークの構造を多層へ拡張する。対称性も隠れ層ごとに現れる</li>
 </ul>
 </div>
 <hr />
-<h2 id="_2">なぜ線形活性化関数では不十分か</h2>
-<p>まず自然な問いから始める：「活性化関数に恒等写像 <span class="arithmatex">\(h(a) = a\)</span> を使えばどうなるか？」</p>
-<h3 id="_3">線形変換の合成は線形</h3>
-<p><strong>出発点：</strong> 二層ネットワークの関数</p>
-<div class="arithmatex">\[\mathbf{y}(\mathbf{x}, \mathbf{w}) = f\!\left(\mathbf{W}^{(2)} h\!\left(\mathbf{W}^{(1)} \mathbf{x}\right)\right)\]</div>
-<p><span class="arithmatex">\(h\)</span> が恒等写像（線形）で <span class="arithmatex">\(f\)</span> も線形なら：</p>
-<div class="arithmatex">\[\mathbf{y} = \mathbf{W}^{(2)}\mathbf{W}^{(1)}\mathbf{x} = \mathbf{A}\mathbf{x}\]</div>
-<p><strong>結論：</strong> <span class="arithmatex">\(\mathbf{A} = \mathbf{W}^{(2)}\mathbf{W}^{(1)}\)</span> は単なる行列積であり、隠れ層は意味をなさない。何層積み重ねても「1層の線形変換」と等価になる。</p>
-<div class="admonition warning">
-<p class="admonition-title">唯一の例外：ボトルネック構造</p>
-<p>隠れユニット数 <span class="arithmatex">\(M\)</span> が入力次元 <span class="arithmatex">\(D\)</span> や出力次元 <span class="arithmatex">\(K\)</span> より小さい場合、線形隠れ層は情報を次元削減する。パラメータ数 <span class="arithmatex">\(M(N+K)\)</span> 対 直接写像 <span class="arithmatex">\(NK\)</span> というトレードオフが生まれ、これは<strong>主成分分析（PCA）</strong>と等価な操作に相当する。ただし、非線形表現を獲得するという本来の目的は果たせない。</p>
+<h2 id="_2">重み空間の対称性とは何か</h2>
+<p>ニューラルネットワークの学習では、パラメータ全体を一つのベクトル</p>
+<div class="arithmatex">\[
+\mathbf{w}
+\]</div>
+<p>として見ることが多い。この <span class="arithmatex">\(\mathbf{w}\)</span> が動く空間を<strong>重み空間（weight space）</strong>と呼ぶ。</p>
+<p>重み空間の対称性とは、次のような状況を指す。</p>
+<div class="arithmatex">\[
+\mathbf{w} \neq \mathbf{w}' \quad \text{だが} \quad
+\mathbf{y}(\mathbf{x}, \mathbf{w}) = \mathbf{y}(\mathbf{x}, \mathbf{w}')
+\quad \text{for all } \mathbf{x}
+\]</div>
+<p>つまり、パラメータ値としては別物なのに、関数としては完全に同じ写像を表す。</p>
+<div class="admonition note">
+<p class="admonition-title">重要な区別</p>
+<p>対称性は「似た出力を出す」ことではなく、<strong>すべての入力に対して同じ出力を出す</strong>ことを意味する。したがって、これは近似的な偶然ではなく、ネットワーク構造そのものが持つ厳密な冗長性である。</p>
 </div>
 <hr />
-<h2 id="_4">各活性化関数の詳細</h2>
-<h3 id="logistic-sigmoid">Logistic Sigmoid</h3>
-<div class="arithmatex">\[\sigma(a) = \frac{1}{1+\exp(-a)} \tag{6.13}\]</div>
-<p>出力範囲は <span class="arithmatex">\((0, 1)\)</span>。生物学的ニューロンの発火率のモデルに着想を得た初期の標準的選択肢。</p>
-<p><strong>微分：</strong></p>
-<div class="arithmatex">\[\frac{d\sigma}{da} = \sigma(a)\bigl(1 - \sigma(a)\bigr)\]</div>
-<p><span class="arithmatex">\(a \to \pm\infty\)</span> で <span class="arithmatex">\(\sigma(a) \to 0\)</span> または <span class="arithmatex">\(1\)</span> となり、微分は <strong>指数的にゼロ</strong> に近づく。</p>
-<h3 id="tanh">tanh</h3>
-<div class="arithmatex">\[\tanh(a) = \frac{e^a - e^{-a}}{e^a + e^{-a}} \tag{6.14}\]</div>
-<p>出力範囲は <span class="arithmatex">\((-1, 1)\)</span>。Sigmoid との関係：</p>
-<div class="arithmatex">\[\tanh(a) = 2\sigma(2a) - 1\]</div>
-<p>すなわち、入出力に線形変換を施した sigmoid と等価。<strong>理論上</strong> はどちらを使っても等価なネットワークが存在するが、<strong>実際の学習では等価でない</strong>。勾配法ではパラメータの初期化が重要であり、活性化関数を変えれば初期化スキームも変える必要がある。</p>
-<p>tanh も sigmoid と同様に、大きな <span class="arithmatex">\(|a|\)</span> で勾配が消失する。</p>
-<h3 id="hard-tanhcollobert-2004">Hard tanh（Collobert, 2004）</h3>
-<div class="arithmatex">\[h(a) = \max(-1, \min(1, a)) \tag{6.15}\]</div>
-<p>tanh の区分線形近似。<span class="arithmatex">\(a \in [-1, 1]\)</span> で傾き <span class="arithmatex">\(1\)</span>、それ以外で定数。計算コストが低い代わりに、<span class="arithmatex">\(a = \pm 1\)</span> で微分不連続点を持つ（実用上は無視可）。</p>
-<h3 id="softplus">Softplus</h3>
-<div class="arithmatex">\[h(a) = \ln(1 + \exp(a)) \tag{6.16}\]</div>
-<p><strong>導出の直感：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da} = \frac{\exp(a)}{1 + \exp(a)} = \sigma(a)\]</div>
-<p>微分が sigmoid になる。<span class="arithmatex">\(a \gg 1\)</span> の極限で：</p>
-<div class="arithmatex">\[h(a) = \ln(1 + e^a) \approx \ln(e^a) = a\]</div>
-<p>つまり大きな正値では <span class="arithmatex">\(h(a) \approx a\)</span> となり、<strong>勾配が 1 に近い非ゼロ値</strong>を保つ。勾配消失を緩和する性質がある。後述の ReLU の滑らか版（Soft ReLU）とも呼ばれる。</p>
-<h3 id="relurectified-linear-unit">ReLU（Rectified Linear Unit）</h3>
-<div class="arithmatex">\[h(a) = \max(0, a) \tag{6.17}\]</div>
-<p>最もシンプルかつ現在最も広く使われる活性化関数（Krizhevsky, Sutskever, and Hinton, 2012）。</p>
-<p><strong>微分：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da} = \begin{cases} 1 &amp; (a &gt; 0) \\ 0 &amp; (a &lt; 0) \end{cases}\]</div>
-<p><span class="arithmatex">\(a = 0\)</span> では技術的に微分不定義だが、実用上は無視して問題ない。</p>
-<div class="admonition success">
-<p class="admonition-title">ReLU の優位性</p>
-<ol>
-<li><strong>正側で勾配 = 1</strong>：勾配消失が起きない（正値の範囲で）</li>
-<li><strong>初期化への頑健性</strong>：sigmoid/tanh と比べて重み初期値の影響を受けにくい</li>
-<li><strong>低精度実装に適合</strong>：8-bit 固定小数点でも 64-bit 浮動小数点と同等の性能</li>
-<li><strong>計算コストが低い</strong>：max 演算のみ</li>
-</ol>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Dying ReLU 問題</p>
-<p><span class="arithmatex">\(a &lt; 0\)</span> ではグラジェントが常に <span class="arithmatex">\(0\)</span> になるため、あるユニットへの入力が常に負になると、そのユニットは訓練中に一切の「誤差信号」を受け取らない。大きな学習率や特定の初期化によって発生しやすい。</p>
-</div>
-<h3 id="leaky-relu">Leaky ReLU</h3>
-<div class="arithmatex">\[h(a) = \max(0, a) + \alpha \min(0, a), \quad 0 &lt; \alpha &lt; 1 \tag{6.18}\]</div>
-<p>Dying ReLU 問題への対処。負値でも傾き <span class="arithmatex">\(\alpha\)</span> の非ゼロ勾配を持つ。</p>
+<h2 id="_3">例として扱うネットワーク</h2>
+<p>§6.2.4 では、次の二層ネットワークを考える。</p>
 <ul>
-<li><strong>特殊ケース</strong> <span class="arithmatex">\(\alpha = -1\)</span>：<span class="arithmatex">\(h(a) = |a|\)</span>（絶対値関数）</li>
-<li><strong>Parametric ReLU（PReLU）</strong>：各隠れユニットが独自の <span class="arithmatex">\(\alpha_j\)</span> を持ち、重み・バイアスと同様に勾配降下法で学習する</li>
+<li>入力層</li>
+<li><span class="arithmatex">\(M\)</span> 個の隠れユニット</li>
+<li>tanh 活性化関数</li>
+<li>入力層から隠れ層、隠れ層から出力層まで完全結合</li>
 </ul>
+<p>バイアスを含めて書くと、隠れユニット <span class="arithmatex">\(j\)</span> の前活性化は</p>
+<div class="arithmatex">\[
+a_j = \sum_i w_{ji}^{(1)} x_i + w_{j0}^{(1)}
+\]</div>
+<p>隠れユニット出力は</p>
+<div class="arithmatex">\[
+z_j = \tanh(a_j)
+\]</div>
+<p>出力層への寄与は</p>
+<div class="arithmatex">\[
+w_{kj}^{(2)} z_j
+\]</div>
+<p>である。</p>
+<p>この構造に対して、主に二種類の対称性が現れる。</p>
 <hr />
-<h2 id="_5">具体例・可視化</h2>
-<h3 id="relu">勾配消失から ReLU への系譜</h3>
-<pre class="mermaid"><code>graph TD
-    Sig["Logistic Sigmoid&lt;br/&gt;σ(a) = 1/(1+e⁻ᵃ)&lt;br/&gt;範囲: (0,1)"]
-    Tanh["tanh&lt;br/&gt;範囲: (-1,1)&lt;br/&gt;= 2σ(2a)-1"]
-    HTanh["Hard tanh&lt;br/&gt;区分線形近似&lt;br/&gt;計算コスト低"]
-    VG["問題: 勾配消失&lt;br/&gt;|a|→∞ で dh/da→0"]
-    SP["Softplus&lt;br/&gt;h(a)=ln(1+eᵃ)&lt;br/&gt;滑らかな近似"]
-    ReLU["ReLU&lt;br/&gt;h(a)=max(0,a)&lt;br/&gt;実用デフォルト"]
-    LReLU["Leaky ReLU&lt;br/&gt;h(a)=max(0,a)+α·min(0,a)&lt;br/&gt;負側も勾配あり"]
-    PReLU["Parametric ReLU&lt;br/&gt;αj を学習"]
+<h2 id="1">1. 符号反転対称性</h2>
+<h3 id="_4">変換</h3>
+<p>ある隠れユニット <span class="arithmatex">\(j\)</span> に注目する。このユニットに<strong>入ってくる重みとバイアス</strong>をすべて符号反転する。</p>
+<div class="arithmatex">\[
+w_{ji}^{(1)} \mapsto -w_{ji}^{(1)}, \quad
+w_{j0}^{(1)} \mapsto -w_{j0}^{(1)}
+\]</div>
+<p>すると前活性化は</p>
+<div class="arithmatex">\[
+a_j \mapsto -a_j
+\]</div>
+<p>となる。tanh は奇関数なので、</p>
+<div class="arithmatex">\[
+z_j = \tanh(a_j) \mapsto \tanh(-a_j) = -\tanh(a_j) = -z_j
+\]</div>
+<p>つまり、この隠れユニットの出力だけが符号反転する。</p>
+<p>次に、この隠れユニットから<strong>出ていく重み</strong>をすべて符号反転する。</p>
+<div class="arithmatex">\[
+w_{kj}^{(2)} \mapsto -w_{kj}^{(2)}
+\]</div>
+<p>すると出力層への寄与は</p>
+<div class="arithmatex">\[
+w_{kj}^{(2)} z_j
+\mapsto
+(-w_{kj}^{(2)})(-z_j)
+=
+w_{kj}^{(2)} z_j
+\]</div>
+<p>となり、元と完全に一致する。</p>
+<h3 id="_5">直感</h3>
+<p>隠れユニットの内部表現を反転しても、その後段の重みも同時に反転すれば、最終出力から見ると何も変わらない。</p>
+<pre class="mermaid"><code>graph LR
+    X["入力 x"] --&gt;|"w(1)"| H["隠れユニット j&lt;br/&gt;zj = tanh(aj)"]
+    H --&gt;|"w(2)"| Y["出力 y"]
 
-    Sig --&gt; VG
-    Tanh --&gt; VG
-    Tanh --&gt; HTanh
-    VG --&gt; SP
-    VG --&gt; ReLU
-    ReLU --&gt; LReLU
-    LReLU --&gt; PReLU
+    X2["入力 x"] --&gt;|"-w(1)"| H2["隠れユニット j&lt;br/&gt;-zj = tanh(-aj)"]
+    H2 --&gt;|"-w(2)"| Y2["出力 y"]
 
-    style VG fill:#fee2e2
-    style ReLU fill:#dcfce7
-    style LReLU fill:#dbeafe</code></pre>
-<h3 id="_6">活性化関数の比較表</h3>
+    Y -. "同じ写像" .- Y2
+
+    style H fill:#fef9c3
+    style H2 fill:#fef9c3
+    style Y fill:#dcfce7
+    style Y2 fill:#dcfce7</code></pre>
+<h3 id="_6">何通りあるか</h3>
+<p>各隠れユニットについて、符号を反転するか、しないかの二択がある。隠れユニットが <span class="arithmatex">\(M\)</span> 個あれば、</p>
+<div class="arithmatex">\[
+2^M
+\]</div>
+<p>通りの等価な重みベクトルが存在する。</p>
+<hr />
+<h2 id="2">2. 入れ替え対称性</h2>
+<h3 id="_7">変換</h3>
+<p>次に、二つの隠れユニット <span class="arithmatex">\(j\)</span> と <span class="arithmatex">\(l\)</span> を考える。</p>
+<p>この二つについて、次をすべて入れ替える。</p>
+<ul>
+<li>それぞれの隠れユニットに入ってくる重み</li>
+<li>それぞれのバイアス</li>
+<li>それぞれの隠れユニットから出ていく重み</li>
+</ul>
+<p>これは、隠れユニットの<strong>名前</strong>や<strong>順序</strong>を入れ替えているだけである。出力層から見ると、同じ計算部品が別の番号に移動しただけなので、ネットワーク全体の入出力写像は変わらない。</p>
+<h3 id="_8">数式で見る</h3>
+<p>出力層の前活性化のうち、隠れ層からの寄与は</p>
+<div class="arithmatex">\[
+\sum_{j=1}^{M} w_{kj}^{(2)} z_j
+\]</div>
+<p>である。隠れユニットの順序を並べ替えても、これは和であるため値は変わらない。例えば <span class="arithmatex">\(j=1\)</span> と <span class="arithmatex">\(j=2\)</span> を入れ替えても、</p>
+<div class="arithmatex">\[
+w_{k1}^{(2)} z_1 + w_{k2}^{(2)} z_2
+\]</div>
+<p>が</p>
+<div class="arithmatex">\[
+w_{k2}^{(2)} z_2 + w_{k1}^{(2)} z_1
+\]</div>
+<p>になるだけで、同じ値である。</p>
+<h3 id="_9">何通りあるか</h3>
+<p><span class="arithmatex">\(M\)</span> 個の隠れユニットの並べ替えは</p>
+<div class="arithmatex">\[
+M \times (M-1) \times \cdots \times 2 \times 1 = M!
+\]</div>
+<p>通りある。したがって、任意の重みベクトルは少なくとも <span class="arithmatex">\(M!\)</span> 個の等価な重みベクトルの集合に属する。</p>
+<hr />
+<h2 id="_10">総対称性因子</h2>
+<p>符号反転対称性と入れ替え対称性を合わせると、二層ネットワークの重み空間には</p>
+<div class="arithmatex">\[
+\text{対称性因子} = M! \cdot 2^M
+\]</div>
+<p>の等価な表現が存在する。</p>
 <table>
 <thead>
 <tr>
-<th>関数</th>
-<th>定義</th>
-<th>出力範囲</th>
-<th>勾配消失</th>
-<th>主な問題点</th>
+<th>対称性</th>
+<th>操作</th>
+<th>等価解の数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Identity</td>
-<td><span class="arithmatex">\(h(a) = a\)</span></td>
-<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
-<td>なし</td>
-<td>非線形表現不能</td>
+<td>符号反転</td>
+<td>各隠れユニットの入力側と出力側の重みを同時に反転</td>
+<td><span class="arithmatex">\(2^M\)</span></td>
 </tr>
 <tr>
-<td>Logistic sigmoid</td>
-<td><span class="arithmatex">\(\frac{1}{1+e^{-a}}\)</span></td>
-<td><span class="arithmatex">\((0, 1)\)</span></td>
-<td><strong>あり</strong></td>
-<td>勾配消失・出力オフセット</td>
+<td>入れ替え</td>
+<td>隠れユニットの番号を並べ替える</td>
+<td><span class="arithmatex">\(M!\)</span></td>
 </tr>
 <tr>
-<td>tanh</td>
-<td><span class="arithmatex">\(\frac{e^a-e^{-a}}{e^a+e^{-a}}\)</span></td>
-<td><span class="arithmatex">\((-1, 1)\)</span></td>
-<td><strong>あり</strong></td>
-<td>勾配消失</td>
-</tr>
-<tr>
-<td>Hard tanh</td>
-<td><span class="arithmatex">\(\max(-1,\min(1,a))\)</span></td>
-<td><span class="arithmatex">\([-1, 1]\)</span></td>
-<td>境界で<strong>あり</strong></td>
-<td>非微分点</td>
-</tr>
-<tr>
-<td>Softplus</td>
-<td><span class="arithmatex">\(\ln(1+e^a)\)</span></td>
-<td><span class="arithmatex">\((0, \infty)\)</span></td>
-<td>緩和</td>
-<td>計算コストやや高</td>
-</tr>
-<tr>
-<td>ReLU</td>
-<td><span class="arithmatex">\(\max(0, a)\)</span></td>
-<td><span class="arithmatex">\([0, \infty)\)</span></td>
-<td>正側なし</td>
-<td>Dying ReLU（負側）</td>
-</tr>
-<tr>
-<td>Leaky ReLU</td>
-<td><span class="arithmatex">\(\max(0,a)+\alpha\min(0,a)\)</span></td>
-<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
-<td>なし</td>
-<td><span class="arithmatex">\(\alpha\)</span> の設定</td>
+<td>合計</td>
+<td>両方を組み合わせる</td>
+<td><span class="arithmatex">\(M!2^M\)</span></td>
 </tr>
 </tbody>
 </table>
-<h3 id="_7">勾配の挙動（数式確認）</h3>
-<p><strong>sigmoid の勾配消失：</strong></p>
-<div class="arithmatex">\[\frac{d\sigma}{da}\bigg|_{a=5} = \sigma(5)(1-\sigma(5)) \approx 0.993 \times 0.007 \approx 0.007\]</div>
-<div class="arithmatex">\[\frac{d\sigma}{da}\bigg|_{a=10} \approx 4.5 \times 10^{-5}\]</div>
-<p>大きな正値では勾配が指数的に 0 へ。深いネットワークでは層を経るごとに掛け算されるため、<strong>入力層に近いほど勾配がほぼ消える</strong>。</p>
-<p><strong>ReLU の勾配（正値）：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da}\bigg|_{a=5} = 1, \quad \frac{dh}{da}\bigg|_{a=100} = 1\]</div>
-<p>正値の入力に対して勾配は常に 1。深い層でも勾配が消えない。</p>
-<div class="admonition note">
-<p class="admonition-title">実践的指針</p>
-<p>特定の理由がない限り、<strong>ReLU をデフォルト</strong>として使用する。Dying ReLU が懸念される場合は Leaky ReLU または PReLU を検討する。sigmoid/tanh は出力層の確率モデリングなどに用途を限定するのが現代的なプラクティス。</p>
+<p>例えば <span class="arithmatex">\(M=3\)</span> なら、</p>
+<div class="arithmatex">\[
+3! \cdot 2^3 = 6 \cdot 8 = 48
+\]</div>
+<p>通りの異なる重みベクトルが、同じ関数を表す。</p>
+<div class="admonition warning">
+<p class="admonition-title">「同じ関数」と「同じ学習経路」は違う</p>
+<p>これらの重みベクトルは最終的な入出力写像としては等価だが、初期値や最適化の途中経路まで同じになるとは限らない。対称性は目的関数の形に複数の等価な谷やモードを作る。</p>
 </div>
 <hr />
-<h2 id="_8">まとめ</h2>
+<h2 id="_11">多層ネットワークの場合</h2>
+<p>二層ネットワークでは、隠れ層が一つなので対称性因子は</p>
+<div class="arithmatex">\[
+M!2^M
+\]</div>
+<p>だった。</p>
+<p>より深いネットワークでは、隠れ層ごとに同様の対称性が現れる。第 <span class="arithmatex">\(l\)</span> 隠れ層のユニット数を <span class="arithmatex">\(M_l\)</span> とすると、層ごとの因子を掛け合わせて、</p>
+<div class="arithmatex">\[
+\prod_l M_l! \, 2^{M_l}
+\]</div>
+<p>のような形で総対称性が増えていく。</p>
+<div class="admonition note">
+<p class="admonition-title">深層化で冗長性も増える</p>
+<p>深いネットワークは表現力を増す一方で、同じ関数を表すパラメータ表現も大量に持つ。これはニューラルネットワークの「関数空間」と「パラメータ空間」が一対一対応していないことを示している。</p>
+</div>
+<hr />
+<h2 id="tanh">tanh だけの話ではない</h2>
+<p>上の符号反転の説明では tanh の奇関数性を使った。しかし、Bishop and Bishop は、重み空間の対称性は tanh だけに特有の現象ではなく、幅広い活性化関数に対して現れると述べている。</p>
+<p>特に入れ替え対称性は、活性化関数の種類にほとんど依存しない。隠れユニットが同じ構造・同じ活性化関数を持つなら、ユニット番号を入れ替えてもネットワークが表す関数は変わらない。</p>
+<p>一方、符号反転対称性の具体的な形は活性化関数に依存する。tanh では</p>
+<div class="arithmatex">\[
+h(-a) = -h(a)
+\]</div>
+<p>が成り立つため、符号反転で厳密に補償できる。ReLU は</p>
+<div class="arithmatex">\[
+\operatorname{ReLU}(-a) \neq -\operatorname{ReLU}(a)
+\]</div>
+<p>なので、tanh と同じ符号反転の議論はそのままでは使えない。ただし、同種の隠れユニットを並べ替える対称性は ReLU ネットワークにも存在する。</p>
+<hr />
+<h2 id="_12">実用上の意味</h2>
+<h3 id="_13">通常の勾配学習では大きな問題になりにくい</h3>
+<p>SGD や Adam などでネットワークを訓練する場合、目的は「良い予測をするパラメータを一つ見つける」ことである。等価な解が他に多数存在しても、そのうち一つに到達できれば十分なので、重み空間の対称性は通常あまり問題にならない。</p>
+<h3 id="_14">ベイズ的手法では重要になる</h3>
+<p>一方、ベイズ的に「ネットワークサイズの異なるモデル」を比較したり、事後分布全体を扱ったりする場合、この冗長性は無視しにくい。</p>
+<p>同じ関数に対応する重みベクトルが <span class="arithmatex">\(M!2^M\)</span> 個あるなら、重み空間上で確率質量や積分を数えるときに、その分だけ同じ関数を重複して数えてしまう可能性がある。したがって、モデル証拠やネットワークサイズの事後分布を評価する際には、対称性因子を考慮する必要がある。</p>
+<pre class="mermaid"><code>graph TD
+    W["重み空間&lt;br/&gt;多数のパラメータ点"] --&gt; F["関数空間&lt;br/&gt;入出力写像"]
+    W1["w"] --&gt; G["同じ関数 g(x)"]
+    W2["符号反転した w'"] --&gt; G
+    W3["ユニットを入れ替えた w''"] --&gt; G
+
+    G --&gt; T1["勾配学習&lt;br/&gt;どれか1つ見つかればよい"]
+    G --&gt; T2["ベイズ推論&lt;br/&gt;重複カウントに注意"]
+
+    style W fill:#dbeafe
+    style F fill:#dcfce7
+    style T2 fill:#fef9c3</code></pre>
+<hr />
+<h2 id="2_1">具体例：隠れユニット2個の場合</h2>
+<p><span class="arithmatex">\(M=2\)</span> の tanh 二層ネットワークを考える。このとき総対称性因子は</p>
+<div class="arithmatex">\[
+2! \cdot 2^2 = 8
+\]</div>
+<p>である。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何もしない</td>
+<td>元の重みベクトル</td>
+</tr>
+<tr>
+<td>ユニット1の符号反転</td>
+<td>ユニット1の入力側・出力側を同時に反転</td>
+</tr>
+<tr>
+<td>ユニット2の符号反転</td>
+<td>ユニット2の入力側・出力側を同時に反転</td>
+</tr>
+<tr>
+<td>両方の符号反転</td>
+<td>ユニット1・2の両方を反転</td>
+</tr>
+<tr>
+<td>ユニット1と2の入れ替え</td>
+<td>隠れユニットの番号を交換</td>
+</tr>
+<tr>
+<td>入れ替え + ユニット1側の符号反転</td>
+<td>並べ替え後に片方を反転</td>
+</tr>
+<tr>
+<td>入れ替え + ユニット2側の符号反転</td>
+<td>並べ替え後にもう片方を反転</td>
+</tr>
+<tr>
+<td>入れ替え + 両方の符号反転</td>
+<td>並べ替え後に両方を反転</td>
+</tr>
+</tbody>
+</table>
+<p>これらは重みベクトルとしては異なるが、ネットワークが表す関数は同じである。</p>
+<hr />
+<h2 id="_15">まとめ</h2>
 <table>
 <thead>
 <tr>
@@ -1147,36 +1337,39 @@
 </thead>
 <tbody>
 <tr>
-<td>線形活性化の限界</td>
-<td>合成が線形となり隠れ層が無意味になる（例外: ボトルネック→PCA相当）</td>
+<td>重み空間の対称性</td>
+<td>異なる重みベクトルが同じ入出力関数を表す</td>
 </tr>
 <tr>
-<td>sigmoid/tanh の問題</td>
-<td>大きな <span class="arithmatex">\(\|a\|\)</span> で勾配が指数的に消失（vanishing gradients）</td>
+<td>符号反転対称性</td>
+<td>tanh の奇関数性により、入力側と出力側の符号反転が打ち消し合う</td>
 </tr>
 <tr>
-<td>Softplus の位置づけ</td>
-<td>ReLU の滑らか版；大きな正値で <span class="arithmatex">\(h(a)\approx a\)</span> により勾配を保持</td>
+<td>入れ替え対称性</td>
+<td>隠れユニットの順序を入れ替えても、和の値は変わらない</td>
 </tr>
 <tr>
-<td>ReLU の優位性</td>
-<td>正側で勾配 = 1、計算安価、初期化頑健、低精度実装に適合</td>
+<td>二層ネットワークの因子</td>
+<td><span class="arithmatex">\(M!2^M\)</span></td>
 </tr>
 <tr>
-<td>Leaky/Parametric ReLU</td>
-<td>Dying ReLU への対処；負側にも非ゼロ勾配を与える</td>
+<td>多層ネットワーク</td>
+<td>隠れ層ごとの対称性因子を掛け合わせる</td>
+</tr>
+<tr>
+<td>実用上の影響</td>
+<td>通常の勾配学習では小さいが、ベイズ的モデル比較では重要</td>
 </tr>
 </tbody>
 </table>
-<p><strong>結論：</strong> 隠れユニットの活性化関数は非線形かつ微分可能であればよいが、実用的には勾配消失を避けることが最重要。ReLU の登場（2012年）は深層学習の実用化を大きく前進させた。活性化関数の選択は表現力だけでなく、学習ダイナミクス全体に影響する。</p>
+<p><strong>結論：</strong> ニューラルネットワークのパラメータ化は冗長であり、重み空間の一点と関数空間の一点は一対一に対応しない。この冗長性は通常の訓練では大きな障害になりにくいが、事後分布やモデル証拠のように「重み空間全体を数える」議論では明示的に扱う必要がある。</p>
 <hr />
-<h2 id="_9">担当者の議論・疑問点</h2>
+<h2 id="_16">担当者の議論・疑問点</h2>
 <ul>
-<li><strong>Dying ReLU の発生条件を定量的に把握したい</strong>：学習率・重み初期化（Xavier/He）・バッチサイズのどの組み合わせが Dying ReLU を引き起こしやすいか？</li>
-<li><strong>sigmoid と tanh が実質等価（<span class="arithmatex">\(\tanh(a)=2\sigma(2a)-1\)</span>）でも学習が等価でない理由</strong>：具体的にどの初期化スキームを変えれば同等になるか？（Exercise 6.4 との関連）</li>
-<li><strong>Parametric ReLU の <span class="arithmatex">\(\alpha_j\)</span> 学習の実際</strong>：ユニットごとに異なる <span class="arithmatex">\(\alpha_j\)</span> に収束するか、それとも均質化するか？実験的知見は？</li>
-<li><strong>Softplus vs ReLU の選択基準</strong>：滑らかさが必要な場面（二階微分が必要な物理インフォームドニューラルネット等）での使い分け</li>
-<li><strong>§6.2.4 との接続</strong>：tanh が奇関数であることが符号反転対称性の前提。ReLU で同じ議論はできるか？（ReLU は奇関数でない）</li>
+<li><strong>ReLU ネットワークの対称性はどこまで同じか？</strong> 入れ替え対称性は明らかに残るが、tanh 型の符号反転対称性はそのままでは成り立たない。ReLU 特有のスケーリング対称性との関係も整理したい。</li>
+<li><strong>等価解が多数あると損失地形はどう見えるか？</strong> <span class="arithmatex">\(M!2^M\)</span> 個の等価なモードがあるなら、最適化の軌道や可視化にどのように現れるか。</li>
+<li><strong>ベイズ的モデル選択での補正方法</strong> 同じ関数を重複して数えないために、対称性因子をどのように事前分布やモデル証拠へ反映するか。</li>
+<li><strong>ユニットが完全には同質でない場合</strong> dropout、batch normalization、残差接続、ユニットごとの異なる活性化関数があると、どの対称性が壊れるか。</li>
 </ul>
 
 
