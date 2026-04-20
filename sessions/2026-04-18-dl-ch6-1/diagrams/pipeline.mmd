@@ -1,0 +1,16 @@
+flowchart LR
+    raw_audio["音声ファイル\n(.wav / .mp3)"]
+    preprocessing["前処理\nリサンプリング\n→16kHz, mono"]
+    spectrogram["Log-Mel\nSpectrogram\n80ch × 30sec"]
+    subgraph whisper["Whisperモデル"]
+        encoder["Encoder\nTransformer"]
+        decoder["Decoder\nTransformer"]
+        encoder -->|隠れ状態| decoder
+    end
+    task_tokens["タスクトークン\n言語 / 転写 or 翻訳"]
+    output["出力テキスト\n(転写 or 翻訳)"]
+    raw_audio --> preprocessing
+    preprocessing --> spectrogram
+    spectrogram --> encoder
+    task_tokens --> decoder
+    decoder --> output
