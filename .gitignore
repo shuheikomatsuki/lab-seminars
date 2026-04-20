@@ -4,6 +4,8 @@ site/
 # Python 仮想環境
 .venv/
 
+# ローカルキャッシュ
+.cache/
 
 # macOS
 .DS_Store
