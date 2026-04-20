@@ -150,4 +150,4 @@ uv sync
 - `site/` と `.venv/` もコミット不可（gitignore 済み）。
 - `mkdocs.yml` を編集するときはインデントに注意（YAML はスペース厳格）。
 - スキルのテンプレート（`.agents/skills/*/assets/`）を直接編集した場合、既存セッションには反映されない（新規セッションのみ適用）。
-- `.agents/skills/`、`.claude/skills/`、`.codex/skills/` は `lab-seminar-skills` リポジトリの git submodule。**スキルのテンプレートを修正する場合は `lab-seminar-skills` リポジトリを直接編集すること。`.agents/skills/`、`.claude/skills/`、`.codex/skills/` を直接編集してはならない。** 修正後は `lab-seminar-skills` でコミット・プッシュし、`lab-seminars` で `git submodule update --remote` を実行する。
+- `.agents/skills/` と `.claude/skills/` は `lab-seminar-skills` リポジトリの git submodule。**スキルのテンプレートを修正する場合は `lab-seminar-skills` リポジトリを直接編集すること。`.agents/skills/` や `.claude/skills/` を直接編集してはならない。** 修正後は `lab-seminar-skills` でコミット・プッシュし、`lab-seminars` で `git submodule update --remote` を実行する。

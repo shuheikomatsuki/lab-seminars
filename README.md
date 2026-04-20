@@ -146,10 +146,8 @@ lab-seminars/
 │       └── <DATE>-<slug>/    # 各セッションの記事・図
 ├── .claude/
 │   └── skills/               # Claude Code 用スキル
-├── .codex/
-│   └── skills/               # Codex 用スキル
 ├── .agents/
-│   └── skills/               # Agents 用スキル
+│   └── skills/               # Codex / Agents 用スキル
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml        # GitHub Pages 自動デプロイ
