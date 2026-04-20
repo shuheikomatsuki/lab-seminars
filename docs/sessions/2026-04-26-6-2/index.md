@@ -1,8 +1,8 @@
 # 6.2 多層ネットワーク（Multilayer Networks）
 
-**出典:** C. M. Bishop, H. Bishop, *Deep Learning*, Springer 2024, §6.2
-**担当:** 駒月柊平
-**日付:** 2026-04-26
+**出典:** C. M. Bishop, H. Bishop, *Deep Learning*, Springer 2024, §6.2  
+**担当:** 駒月柊平  
+**日付:** 2026-04-26  
 
 ---
 
