@@ -1,5 +1,5 @@
 # 次回勉強会の開催日（YYYY-MM-DD）
-# /add-seminar-session の date 引数を省略したときに使用される
+# /add-paper-session または /add-textbook-session の date 引数を省略したときに使用される
 next_seminar_date: 2026-04-26
 
 # デフォルト発表者名

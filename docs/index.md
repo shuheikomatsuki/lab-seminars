@@ -16,4 +16,5 @@
 
 ## 使い方
 
-新しいセッションを追加するには [テンプレート](https://github.com/shuheikomatsuki/lab-seminars/tree/main/templates/session) を参照してください。
+論文セッションは `/add-paper-session`、教科書セッションは `/add-textbook-session` で追加します。
+教科書全体の PDF から必要範囲だけを切り出す場合は、先に `/extract-pdf-pages` を使います。
