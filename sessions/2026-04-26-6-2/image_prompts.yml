@@ -1,0 +1,10 @@
+images:
+  - id: universal-approximation-building-blocks
+    article: 6-2-2.md
+    filename: images/universal-approximation-building-blocks.png
+    alt: "複数の隠れユニットが協調して目標関数を近似する概念図"
+    insert_after_heading: "まず直感で理解する"
+    purpose: "普遍近似定理を、基底関数の部品を足し合わせて関数を作る直感として理解しやすくする"
+    prompt: |
+      白背景の教材用ベクター風図解。左側に「目標関数」を表す滑らかな黒い曲線、中央に色の異なる3つから5つの単純な山形またはS字状の部品、右側にそれらを足し合わせて黒い曲線に近づく赤い曲線を配置する。数式や細かい文字は入れず、矢印で「部品を組み合わせる」流れだけを示す。教科書図版の再現ではなく、概念理解用の抽象図にする。
+    notes: "文字は最小限にする。ラベルが崩れる場合はラベルなしで生成し、本文側で説明する。"

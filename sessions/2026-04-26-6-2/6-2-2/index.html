@@ -12,13 +12,13 @@
         <meta name="author" content="Lab Members">
       
       
-        <link rel="canonical" href="https://shuheikomatsuki.github.io/lab-seminars/sessions/2026-04-26-6-2/6-2-3/">
+        <link rel="canonical" href="https://shuheikomatsuki.github.io/lab-seminars/sessions/2026-04-26-6-2/6-2-2/">
       
       
-        <link rel="prev" href="../6-2-2/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../6-2-4/">
+        <link rel="next" href="../6-2-3/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>隠れユニット活性化関数 - 研究室勉強会</title>
+        <title>普遍近似定理 - 研究室勉強会</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#623" class="md-skip">
+        <a href="#622" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              隠れユニット活性化関数
+              普遍近似定理
             
           </span>
         </div>
@@ -528,34 +528,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../6-2-2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    普遍近似定理
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -575,7 +547,7 @@
   <span class="md-ellipsis">
     
   
-    隠れユニット活性化関数
+    普遍近似定理
   
 
     
@@ -593,7 +565,7 @@
   <span class="md-ellipsis">
     
   
-    隠れユニット活性化関数
+    普遍近似定理
   
 
     
@@ -633,102 +605,30 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        なぜ線形活性化関数では不十分か
+        普遍近似定理が言っていること
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="なぜ線形活性化関数では不十分か">
+    <nav class="md-nav" aria-label="普遍近似定理が言っていること">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        線形変換の合成は線形
+        まず直感で理解する
       
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        各活性化関数の詳細
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="各活性化関数の詳細">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#logistic-sigmoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logistic Sigmoid
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tanh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tanh
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hard-tanhcollobert-2004" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hard tanh（Collobert, 2004）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softplus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Softplus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relurectified-linear-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ReLU（Rectified Linear Unit）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leaky-relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Leaky ReLU
+        正確な説明
       
     </span>
   </a>
@@ -744,41 +644,19 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体例・可視化
+        数式で見る「近似できる」の意味
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="具体例・可視化">
+    <nav class="md-nav" aria-label="数式で見る「近似できる」の意味">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配消失から ReLU への系譜
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        活性化関数の比較表
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配の挙動（数式確認）
+        数式の直感的な理解
       
     </span>
   </a>
@@ -791,7 +669,118 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#610-611" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図 6.10 と図 6.11 の読み方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="図 6.10 と図 6.11 の読み方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        関数近似の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分類問題の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普遍近似定理の限界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="普遍近似定理の限界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 存在は保証するが、発見は保証しない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 隠れユニット数が指数的に増える場合がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-no-free-lunch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. No Free Lunch 定理との関係
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 深さの利点を否定しない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体例：折れ線的に曲線を近似する
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -802,7 +791,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         担当者の議論・疑問点
@@ -816,6 +805,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-2-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    隠れユニット活性化関数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -905,102 +922,30 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        なぜ線形活性化関数では不十分か
+        普遍近似定理が言っていること
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="なぜ線形活性化関数では不十分か">
+    <nav class="md-nav" aria-label="普遍近似定理が言っていること">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        線形変換の合成は線形
+        まず直感で理解する
       
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        各活性化関数の詳細
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="各活性化関数の詳細">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#logistic-sigmoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logistic Sigmoid
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tanh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tanh
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hard-tanhcollobert-2004" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hard tanh（Collobert, 2004）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softplus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Softplus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#relurectified-linear-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ReLU（Rectified Linear Unit）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leaky-relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Leaky ReLU
+        正確な説明
       
     </span>
   </a>
@@ -1016,41 +961,19 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体例・可視化
+        数式で見る「近似できる」の意味
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="具体例・可視化">
+    <nav class="md-nav" aria-label="数式で見る「近似できる」の意味">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#relu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配消失から ReLU への系譜
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        活性化関数の比較表
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        勾配の挙動（数式確認）
+        数式の直感的な理解
       
     </span>
   </a>
@@ -1063,7 +986,118 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#610-611" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図 6.10 と図 6.11 の読み方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="図 6.10 と図 6.11 の読み方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        関数近似の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分類問題の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        普遍近似定理の限界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="普遍近似定理の限界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 存在は保証するが、発見は保証しない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 隠れユニット数が指数的に増える場合がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-no-free-lunch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. No Free Lunch 定理との関係
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 深さの利点を否定しない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体例：折れ線的に曲線を近似する
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -1074,7 +1108,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         担当者の議論・疑問点
@@ -1101,225 +1135,260 @@
 
 
 
-<h1 id="623">6.2.3 隠れユニット活性化関数</h1>
-<p><strong>出典:</strong> C. M. Bishop, H. Bishop, <em>Deep Learning</em>, Springer 2024, §6.2.3<br />
+<h1 id="622">6.2.2 普遍近似定理</h1>
+<p><strong>出典:</strong> C. M. Bishop, H. Bishop, <em>Deep Learning</em>, Springer 2024, §6.2.2<br />
 <strong>担当:</strong> 駒月柊平<br />
-<strong>日付:</strong> 2026-04-26  </p>
+<strong>日付:</strong> 2026-04-26</p>
 <p><a href="../">← 概要に戻る</a>
- / <a href="../6-2-4/">次: 6.2.4 重み空間の対称性 →</a></p>
+ / <a href="../6-2-3/">次: 6.2.3 隠れユニット活性化関数 →</a></p>
 <hr />
 <h2 id="_1">このサブセクションの位置づけ</h2>
-<p>§6.2.2 では「二層ネットワークは万能近似器（Universal Approximator）である」という強力な理論的保証を学んだ。しかし、その保証はあくまで<strong>適切な活性化関数が選ばれていること</strong>を前提としている。本節では、隠れユニットの活性化関数として何が使えて、何が良い選択なのかを系統的に整理する。</p>
+<p>§6.2.1 では、二層ネットワークを</p>
+<div class="arithmatex">\[
+\mathbf{y}(\mathbf{x}, \mathbf{w}) = f\!\left(\mathbf{W}^{(2)}h(\mathbf{W}^{(1)}\mathbf{x})\right)
+\]</div>
+<p>という行列表記で書けることを見た。本節では、この形のネットワークがどれほど広い関数を表せるのかを扱う。結論は強力で、十分な数の隠れユニットを用意すれば、二層ネットワークだけでも非常に広い範囲の関数を任意の精度で近似できる。</p>
 <div class="admonition abstract">
 <p class="admonition-title">前後の接続</p>
 <ul>
-<li><strong>← 前（§6.2.2 普遍近似定理）</strong>: 万能近似の保証は「微分可能な活性化関数」という条件に基づく。ではどんな関数が有効か？→ 本節で整理</li>
-<li><strong>→ 次（§6.2.4 重み空間の対称性）</strong>: 活性化関数の奇関数性（tanh など）は重み空間の符号反転対称性を生み出す。活性化関数の選択と対称性は密接に関係する</li>
+<li><strong>← 前（§6.2.1 パラメータ行列）</strong>: 二層ネットワークを、学習可能な基底関数の線形結合としてコンパクトに表した</li>
+<li><strong>→ 次（§6.2.3 隠れユニット活性化関数）</strong>: 普遍近似の保証は、適切な非線形活性化関数を使うことに依存する。ではどの活性化関数を選ぶべきかを次に整理する</li>
 </ul>
 </div>
 <hr />
-<h2 id="_2">なぜ線形活性化関数では不十分か</h2>
-<p>まず自然な問いから始める：「活性化関数に恒等写像 <span class="arithmatex">\(h(a) = a\)</span> を使えばどうなるか？」</p>
-<h3 id="_3">線形変換の合成は線形</h3>
-<p><strong>出発点：</strong> 二層ネットワークの関数</p>
-<div class="arithmatex">\[\mathbf{y}(\mathbf{x}, \mathbf{w}) = f\!\left(\mathbf{W}^{(2)} h\!\left(\mathbf{W}^{(1)} \mathbf{x}\right)\right)\]</div>
-<p><span class="arithmatex">\(h\)</span> が恒等写像（線形）で <span class="arithmatex">\(f\)</span> も線形なら：</p>
-<div class="arithmatex">\[\mathbf{y} = \mathbf{W}^{(2)}\mathbf{W}^{(1)}\mathbf{x} = \mathbf{A}\mathbf{x}\]</div>
-<p><strong>結論：</strong> <span class="arithmatex">\(\mathbf{A} = \mathbf{W}^{(2)}\mathbf{W}^{(1)}\)</span> は単なる行列積であり、隠れ層は意味をなさない。何層積み重ねても「1層の線形変換」と等価になる。</p>
-<div class="admonition warning">
-<p class="admonition-title">唯一の例外：ボトルネック構造</p>
-<p>隠れユニット数 <span class="arithmatex">\(M\)</span> が入力次元 <span class="arithmatex">\(D\)</span> や出力次元 <span class="arithmatex">\(K\)</span> より小さい場合、線形隠れ層は情報を次元削減する。パラメータ数 <span class="arithmatex">\(M(N+K)\)</span> 対 直接写像 <span class="arithmatex">\(NK\)</span> というトレードオフが生まれ、これは<strong>主成分分析（PCA）</strong>と等価な操作に相当する。ただし、非線形表現を獲得するという本来の目的は果たせない。</p>
+<h2 id="_2">普遍近似定理が言っていること</h2>
+<h3 id="_3">まず直感で理解する</h3>
+<div class="admonition note">
+<p class="admonition-title">ざっくり言うと</p>
+<p>普遍近似定理は、「二層ネットワークは、隠れユニットを十分に増やせば、かなり複雑な関数でも好きなだけ近くまねできる」という主張である。ただし、これは「その重みが存在する」という話であって、「学習で必ず見つかる」という話ではない。</p>
 </div>
-<hr />
-<h2 id="_4">各活性化関数の詳細</h2>
-<h3 id="logistic-sigmoid">Logistic Sigmoid</h3>
-<div class="arithmatex">\[\sigma(a) = \frac{1}{1+\exp(-a)} \tag{6.13}\]</div>
-<p>出力範囲は <span class="arithmatex">\((0, 1)\)</span>。生物学的ニューロンの発火率のモデルに着想を得た初期の標準的選択肢。</p>
-<p><strong>微分：</strong></p>
-<div class="arithmatex">\[\frac{d\sigma}{da} = \sigma(a)\bigl(1 - \sigma(a)\bigr)\]</div>
-<p><span class="arithmatex">\(a \to \pm\infty\)</span> で <span class="arithmatex">\(\sigma(a) \to 0\)</span> または <span class="arithmatex">\(1\)</span> となり、微分は <strong>指数的にゼロ</strong> に近づく。</p>
-<h3 id="tanh">tanh</h3>
-<div class="arithmatex">\[\tanh(a) = \frac{e^a - e^{-a}}{e^a + e^{-a}} \tag{6.14}\]</div>
-<p>出力範囲は <span class="arithmatex">\((-1, 1)\)</span>。Sigmoid との関係：</p>
-<div class="arithmatex">\[\tanh(a) = 2\sigma(2a) - 1\]</div>
-<p>すなわち、入出力に線形変換を施した sigmoid と等価。<strong>理論上</strong> はどちらを使っても等価なネットワークが存在するが、<strong>実際の学習では等価でない</strong>。勾配法ではパラメータの初期化が重要であり、活性化関数を変えれば初期化スキームも変える必要がある。</p>
-<p>tanh も sigmoid と同様に、大きな <span class="arithmatex">\(|a|\)</span> で勾配が消失する。</p>
-<h3 id="hard-tanhcollobert-2004">Hard tanh（Collobert, 2004）</h3>
-<div class="arithmatex">\[h(a) = \max(-1, \min(1, a)) \tag{6.15}\]</div>
-<p>tanh の区分線形近似。<span class="arithmatex">\(a \in [-1, 1]\)</span> で傾き <span class="arithmatex">\(1\)</span>、それ以外で定数。計算コストが低い代わりに、<span class="arithmatex">\(a = \pm 1\)</span> で微分不連続点を持つ（実用上は無視可）。</p>
-<h3 id="softplus">Softplus</h3>
-<div class="arithmatex">\[h(a) = \ln(1 + \exp(a)) \tag{6.16}\]</div>
-<p><strong>導出の直感：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da} = \frac{\exp(a)}{1 + \exp(a)} = \sigma(a)\]</div>
-<p>微分が sigmoid になる。<span class="arithmatex">\(a \gg 1\)</span> の極限で：</p>
-<div class="arithmatex">\[h(a) = \ln(1 + e^a) \approx \ln(e^a) = a\]</div>
-<p>つまり大きな正値では <span class="arithmatex">\(h(a) \approx a\)</span> となり、<strong>勾配が 1 に近い非ゼロ値</strong>を保つ。勾配消失を緩和する性質がある。後述の ReLU の滑らか版（Soft ReLU）とも呼ばれる。</p>
-<h3 id="relurectified-linear-unit">ReLU（Rectified Linear Unit）</h3>
-<div class="arithmatex">\[h(a) = \max(0, a) \tag{6.17}\]</div>
-<p>最もシンプルかつ現在最も広く使われる活性化関数（Krizhevsky, Sutskever, and Hinton, 2012）。</p>
-<p><strong>微分：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da} = \begin{cases} 1 &amp; (a &gt; 0) \\ 0 &amp; (a &lt; 0) \end{cases}\]</div>
-<p><span class="arithmatex">\(a = 0\)</span> では技術的に微分不定義だが、実用上は無視して問題ない。</p>
+<p><strong>身近な例え：</strong> なめらかな曲線を短い線分や小さな部品の組み合わせで近似するイメージに近い。1個の部品では大まかな形しか作れないが、部品を増やせば細かい凹凸まで追える。ただし、部品が十分にあっても、それをどう配置すればよいかを自動で簡単に見つけられるとは限らない。</p>
+<!-- image-slot: universal-approximation-building-blocks -->
+
+<h3 id="_4">正確な説明</h3>
+<p>二層フィードフォワードネットワークは、入力 <span class="arithmatex">\(\mathbf{x}\)</span> を受け取り、隠れユニットの出力を線形結合して最終出力を作る。スカラー出力の場合、基本形は次のように書ける。</p>
+<div class="arithmatex">\[
+y(\mathbf{x}, \mathbf{w})
+= \sum_{j=1}^{M} w_j^{(2)} h\!\left(\sum_{i=0}^{D} w_{ji}^{(1)}x_i\right)
+\]</div>
+<p>ここで <span class="arithmatex">\(x_0=1\)</span> とすれば、バイアスも重みの中に吸収されている。各隠れユニット</p>
+<div class="arithmatex">\[
+h\!\left(\sum_{i=0}^{D} w_{ji}^{(1)}x_i\right)
+\]</div>
+<p>は、入力空間上に置かれた「形を変えられる基底関数」と見なせる。第1層の重みは各基底関数の位置・向き・傾きのような性質を決め、第2層の重みはそれらをどの強さで足し合わせるかを決める。</p>
+<p>1980年代後半の結果（Funahashi, Cybenko, Hornik ら）により、幅広い活性化関数に対して、このような二層ネットワークは <span class="arithmatex">\(\mathbb{R}^D\)</span> の連続的な領域上で定義された任意の連続関数を、任意の精度で近似できることが示された。有限次元の離散空間から別の有限次元空間への関数についても、同様の結果が成り立つ。</p>
 <div class="admonition success">
-<p class="admonition-title">ReLU の優位性</p>
-<ol>
-<li><strong>正側で勾配 = 1</strong>：勾配消失が起きない（正値の範囲で）</li>
-<li><strong>初期化への頑健性</strong>：sigmoid/tanh と比べて重み初期値の影響を受けにくい</li>
-<li><strong>低精度実装に適合</strong>：8-bit 固定小数点でも 64-bit 浮動小数点と同等の性能</li>
-<li><strong>計算コストが低い</strong>：max 演算のみ</li>
-</ol>
+<p class="admonition-title">この定理の強さ</p>
+<p>二層ネットワークは、固定された少数の関数形だけを表すモデルではない。隠れユニット数 <span class="arithmatex">\(M\)</span> を増やすことで、非常に広い関数クラスを表現できる。</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Dying ReLU 問題</p>
-<p><span class="arithmatex">\(a &lt; 0\)</span> ではグラジェントが常に <span class="arithmatex">\(0\)</span> になるため、あるユニットへの入力が常に負になると、そのユニットは訓練中に一切の「誤差信号」を受け取らない。大きな学習率や特定の初期化によって発生しやすい。</p>
-</div>
-<h3 id="leaky-relu">Leaky ReLU</h3>
-<div class="arithmatex">\[h(a) = \max(0, a) + \alpha \min(0, a), \quad 0 &lt; \alpha &lt; 1 \tag{6.18}\]</div>
-<p>Dying ReLU 問題への対処。負値でも傾き <span class="arithmatex">\(\alpha\)</span> の非ゼロ勾配を持つ。</p>
-<ul>
-<li><strong>特殊ケース</strong> <span class="arithmatex">\(\alpha = -1\)</span>：<span class="arithmatex">\(h(a) = |a|\)</span>（絶対値関数）</li>
-<li><strong>Parametric ReLU（PReLU）</strong>：各隠れユニットが独自の <span class="arithmatex">\(\alpha_j\)</span> を持ち、重み・バイアスと同様に勾配降下法で学習する</li>
-</ul>
 <hr />
-<h2 id="_5">具体例・可視化</h2>
-<h3 id="relu">勾配消失から ReLU への系譜</h3>
-<pre class="mermaid"><code>graph TD
-    Sig["Logistic Sigmoid&lt;br/&gt;σ(a) = 1/(1+e⁻ᵃ)&lt;br/&gt;範囲: (0,1)"]
-    Tanh["tanh&lt;br/&gt;範囲: (-1,1)&lt;br/&gt;= 2σ(2a)-1"]
-    HTanh["Hard tanh&lt;br/&gt;区分線形近似&lt;br/&gt;計算コスト低"]
-    VG["問題: 勾配消失&lt;br/&gt;|a|→∞ で dh/da→0"]
-    SP["Softplus&lt;br/&gt;h(a)=ln(1+eᵃ)&lt;br/&gt;滑らかな近似"]
-    ReLU["ReLU&lt;br/&gt;h(a)=max(0,a)&lt;br/&gt;実用デフォルト"]
-    LReLU["Leaky ReLU&lt;br/&gt;h(a)=max(0,a)+α·min(0,a)&lt;br/&gt;負側も勾配あり"]
-    PReLU["Parametric ReLU&lt;br/&gt;αj を学習"]
-
-    Sig --&gt; VG
-    Tanh --&gt; VG
-    Tanh --&gt; HTanh
-    VG --&gt; SP
-    VG --&gt; ReLU
-    ReLU --&gt; LReLU
-    LReLU --&gt; PReLU
-
-    style VG fill:#fee2e2
-    style ReLU fill:#dcfce7
-    style LReLU fill:#dbeafe</code></pre>
-<h3 id="_6">活性化関数の比較表</h3>
+<h2 id="_5">数式で見る「近似できる」の意味</h2>
+<p>普遍近似定理の核心は、「目標関数とネットワーク関数の差を、好きな小ささまで抑えられる」という形で理解できる。</p>
+<p><strong>この式がやりたいこと：</strong> 目標関数 <span class="arithmatex">\(g(\mathbf{x})\)</span> とネットワーク <span class="arithmatex">\(y(\mathbf{x}, \mathbf{w})\)</span> の最大誤差が、指定した許容誤差 <span class="arithmatex">\(\varepsilon\)</span> より小さくなる、という状況を表す。</p>
+<p><strong>出発点：</strong></p>
+<p>目標関数を</p>
+<div class="arithmatex">\[
+g(\mathbf{x})
+\]</div>
+<p>ネットワークが表す関数を</p>
+<div class="arithmatex">\[
+y(\mathbf{x}, \mathbf{w})
+\]</div>
+<p>とする。近似したい領域を <span class="arithmatex">\(\mathcal{X}\)</span> と書く。</p>
+<p><strong>ステップ1：各点での誤差を見る</strong></p>
+<p>入力 <span class="arithmatex">\(\mathbf{x}\)</span> における誤差は</p>
+<div class="arithmatex">\[
+\left|g(\mathbf{x}) - y(\mathbf{x}, \mathbf{w})\right|
+\]</div>
+<p>である。この値が小さいほど、その入力に対する近似はよい。</p>
+<p><strong>ステップ2：領域全体で最悪の誤差を見る</strong></p>
+<p>1点だけでなく、領域 <span class="arithmatex">\(\mathcal{X}\)</span> 全体でよい近似になってほしいので、最大誤差を考える。</p>
+<div class="arithmatex">\[
+\sup_{\mathbf{x}\in\mathcal{X}}
+\left|g(\mathbf{x}) - y(\mathbf{x}, \mathbf{w})\right|
+\]</div>
+<p>ここで <span class="arithmatex">\(\sup\)</span> は「上限」を表し、直感的には「一番悪い場所での誤差」と読めばよい。</p>
+<p><strong>ステップ3：任意の精度で近似できる</strong></p>
+<p>任意の小さな正の数 <span class="arithmatex">\(\varepsilon &gt; 0\)</span> に対して、十分な隠れユニット数 <span class="arithmatex">\(M\)</span> と重み <span class="arithmatex">\(\mathbf{w}\)</span> を選べば、</p>
+<div class="arithmatex">\[
+\sup_{\mathbf{x}\in\mathcal{X}}
+\left|g(\mathbf{x}) - y(\mathbf{x}, \mathbf{w})\right|
+&lt; \varepsilon
+\]</div>
+<p>とできる。これが「任意精度で近似できる」という言葉の中身である。</p>
+<div class="admonition warning">
+<p class="admonition-title">存在と学習を混同しない</p>
+<p>上の式は、「そのような <span class="arithmatex">\(M\)</span> と <span class="arithmatex">\(\mathbf{w}\)</span> が存在する」と言っているだけである。SGD や Adam が、その重みを有限時間で見つけられることまでは保証しない。</p>
+</div>
+<h3 id="_6">数式の直感的な理解</h3>
+<p>この式が言っているのは、目標関数のグラフとネットワークのグラフを見比べたとき、近似領域のどこを見てもズレが <span class="arithmatex">\(\varepsilon\)</span> 未満になるようにできる、ということである。<span class="arithmatex">\(\varepsilon\)</span> を小さくするほど高精度な近似を要求していることになり、多くの場合はより多くの隠れユニットが必要になる。</p>
+<div class="admonition note">
+<p class="admonition-title">キーポイント</p>
+<p>普遍近似定理の「万能」は、有限個の隠れユニットで何でも完全に表すという意味ではない。隠れユニットを十分に増やせば、指定した誤差以下に近づけられるという意味である。</p>
+</div>
+<hr />
+<h2 id="610-611">図 6.10 と図 6.11 の読み方</h2>
+<p>§6.2.2 では、二層ネットワークの近似能力を二つの図で示している。</p>
+<h3 id="_7">関数近似の例</h3>
+<p>図 6.10 では、3個の tanh 隠れユニットを持つ二層ネットワークが、次のような1次元関数を近似する様子が示されている。</p>
 <table>
 <thead>
 <tr>
-<th>関数</th>
-<th>定義</th>
-<th>出力範囲</th>
-<th>勾配消失</th>
-<th>主な問題点</th>
+<th>目標関数</th>
+<th>性質</th>
+<th>見るべき点</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Identity</td>
-<td><span class="arithmatex">\(h(a) = a\)</span></td>
-<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
-<td>なし</td>
-<td>非線形表現不能</td>
+<td><span class="arithmatex">\(f(x)=x^2\)</span></td>
+<td>なめらかな曲線</td>
+<td>複数の隠れユニットが曲率を分担する</td>
 </tr>
 <tr>
-<td>Logistic sigmoid</td>
-<td><span class="arithmatex">\(\frac{1}{1+e^{-a}}\)</span></td>
-<td><span class="arithmatex">\((0, 1)\)</span></td>
-<td><strong>あり</strong></td>
-<td>勾配消失・出力オフセット</td>
+<td><span class="arithmatex">\(f(x)=\sin(x)\)</span></td>
+<td>周期的な曲線</td>
+<td>局所的な上下動を組み合わせて追う</td>
 </tr>
 <tr>
-<td>tanh</td>
-<td><span class="arithmatex">\(\frac{e^a-e^{-a}}{e^a+e^{-a}}\)</span></td>
-<td><span class="arithmatex">\((-1, 1)\)</span></td>
-<td><strong>あり</strong></td>
-<td>勾配消失</td>
+<td>$f(x)=</td>
+<td>x</td>
+<td>$</td>
 </tr>
 <tr>
-<td>Hard tanh</td>
-<td><span class="arithmatex">\(\max(-1,\min(1,a))\)</span></td>
-<td><span class="arithmatex">\([-1, 1]\)</span></td>
-<td>境界で<strong>あり</strong></td>
-<td>非微分点</td>
-</tr>
-<tr>
-<td>Softplus</td>
-<td><span class="arithmatex">\(\ln(1+e^a)\)</span></td>
-<td><span class="arithmatex">\((0, \infty)\)</span></td>
-<td>緩和</td>
-<td>計算コストやや高</td>
-</tr>
-<tr>
-<td>ReLU</td>
-<td><span class="arithmatex">\(\max(0, a)\)</span></td>
-<td><span class="arithmatex">\([0, \infty)\)</span></td>
-<td>正側なし</td>
-<td>Dying ReLU（負側）</td>
-</tr>
-<tr>
-<td>Leaky ReLU</td>
-<td><span class="arithmatex">\(\max(0,a)+\alpha\min(0,a)\)</span></td>
-<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
-<td>なし</td>
-<td><span class="arithmatex">\(\alpha\)</span> の設定</td>
+<td><span class="arithmatex">\(f(x)=H(x)\)</span></td>
+<td>ステップ関数</td>
+<td>不連続に近い急な変化も、連続関数で近くまねる</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_7">勾配の挙動（数式確認）</h3>
-<p><strong>sigmoid の勾配消失：</strong></p>
-<div class="arithmatex">\[\frac{d\sigma}{da}\bigg|_{a=5} = \sigma(5)(1-\sigma(5)) \approx 0.993 \times 0.007 \approx 0.007\]</div>
-<div class="arithmatex">\[\frac{d\sigma}{da}\bigg|_{a=10} \approx 4.5 \times 10^{-5}\]</div>
-<p>大きな正値では勾配が指数的に 0 へ。深いネットワークでは層を経るごとに掛け算されるため、<strong>入力層に近いほど勾配がほぼ消える</strong>。</p>
-<p><strong>ReLU の勾配（正値）：</strong></p>
-<div class="arithmatex">\[\frac{dh}{da}\bigg|_{a=5} = 1, \quad \frac{dh}{da}\bigg|_{a=100} = 1\]</div>
-<p>正値の入力に対して勾配は常に 1。深い層でも勾配が消えない。</p>
 <div class="admonition note">
-<p class="admonition-title">実践的指針</p>
-<p>特定の理由がない限り、<strong>ReLU をデフォルト</strong>として使用する。Dying ReLU が懸念される場合は Leaky ReLU または PReLU を検討する。sigmoid/tanh は出力層の確率モデリングなどに用途を限定するのが現代的なプラクティス。</p>
+<p class="admonition-title">隠れユニットは協調して働く</p>
+<p>1つの隠れユニットが目標関数全体を担当するのではない。複数の隠れユニットの出力を足し合わせることで、最終的な関数の形が作られる。</p>
+</div>
+<h3 id="_8">分類問題の例</h3>
+<p>図 6.11 では、2入力・2隠れユニット・1出力のネットワークが、二値分類の決定境界を作る様子が示されている。各隠れユニットは入力空間に1本の境界のような構造を作り、出力ユニットがそれらを組み合わせて最終的な分類境界を作る。</p>
+<pre class="mermaid"><code>graph LR
+    X["入力空間&lt;br/&gt;x1, x2"] --&gt; H1["隠れユニット1&lt;br/&gt;局所的な特徴"]
+    X --&gt; H2["隠れユニット2&lt;br/&gt;別の特徴"]
+    H1 --&gt; S["線形結合&lt;br/&gt;特徴を足し合わせる"]
+    H2 --&gt; S
+    S --&gt; Y["出力&lt;br/&gt;分類境界"]
+
+    style X fill:#dbeafe
+    style H1 fill:#fef9c3
+    style H2 fill:#fef9c3
+    style Y fill:#dcfce7</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">図の読み間違い</p>
+<p>隠れユニットの境界そのものが最終的な分類境界ではない。最終的な境界は、隠れユニット出力を出力層で組み合わせた結果として現れる。</p>
 </div>
 <hr />
-<h2 id="_8">まとめ</h2>
+<h2 id="_9">普遍近似定理の限界</h2>
+<p>普遍近似定理はニューラルネットワークの表現力を支える重要な結果だが、実用上の問題をすべて解決するわけではない。</p>
+<h3 id="1">1. 存在は保証するが、発見は保証しない</h3>
+<p>定理は「よい重みが存在する」と言うだけで、「学習アルゴリズムがその重みに到達する」とは言わない。損失関数の形、初期値、最適化手法、データ数、正則化などが学習結果を左右する。</p>
+<h3 id="2">2. 隠れユニット数が指数的に増える場合がある</h3>
+<p>ある関数を二層ネットワークで表すには、隠れユニット数が入力次元に対して指数的に必要になる場合がある。つまり、理論的には近似できても、モデルサイズが現実的でない可能性がある。</p>
+<h3 id="3-no-free-lunch">3. No Free Lunch 定理との関係</h3>
+<p>後の節で扱う No Free Lunch 定理は、あらゆる問題に対して常に最良に働く万能な学習アルゴリズムは存在しない、という考え方を与える。普遍近似定理が表現力の広さを述べる一方で、No Free Lunch は学習問題全体に対する万能性には限界があることを示す。</p>
+<h3 id="4">4. 深さの利点を否定しない</h3>
+<p>二層ネットワークが普遍近似器であることは、深いネットワークが不要という意味ではない。実用上は、多層ネットワークが階層的な内部表現を学習できるため、同じ関数をはるかに効率よく表せることがある。</p>
+<pre class="mermaid"><code>graph TD
+    UA["普遍近似定理&lt;br/&gt;二層でも広い関数を近似可能"] --&gt; E1["ただし存在保証のみ"]
+    UA --&gt; E2["隠れユニット数が巨大化しうる"]
+    UA --&gt; E3["学習可能性は別問題"]
+    E1 --&gt; DL["深層学習への動機"]
+    E2 --&gt; DL
+    E3 --&gt; DL
+    DL --&gt; H["階層的表現を効率よく学習"]
+
+    style UA fill:#dcfce7
+    style E1 fill:#fef9c3
+    style E2 fill:#fef9c3
+    style E3 fill:#fef9c3
+    style DL fill:#dbeafe</code></pre>
+<hr />
+<h2 id="_10">具体例：折れ線的に曲線を近似する</h2>
+<p>1次元入力 <span class="arithmatex">\(x\)</span> に対して、目標関数 <span class="arithmatex">\(g(x)=x^2\)</span> を考える。少数の隠れユニットでは、ネットワークは曲線の大まかな傾向しか追えない。</p>
+<table>
+<thead>
+<tr>
+<th>隠れユニット数</th>
+<th>直感的な状態</th>
+<th>近似の特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>少ない</td>
+<td>部品が足りない</td>
+<td>大まかな曲がりだけを表す</td>
+</tr>
+<tr>
+<td>中くらい</td>
+<td>いくつかの領域を分担</td>
+<td>曲率をかなり追える</td>
+</tr>
+<tr>
+<td>多い</td>
+<td>細かく調整できる</td>
+<td>誤差を小さくできる</td>
+</tr>
+</tbody>
+</table>
+<p>ここで重要なのは、隠れユニットの数を増やすほど表現力は増すが、学習するパラメータも増えるという点である。表現力・計算量・過学習リスクのバランスを取る必要がある。</p>
+<div class="admonition warning">
+<p class="admonition-title">「ユニットを増やせば常に良い」ではない</p>
+<p>訓練データへの当てはまりは改善しても、未知データへの汎化が悪くなることがある。普遍近似定理は汎化性能を直接保証しない。</p>
+</div>
+<hr />
+<h2 id="_11">まとめ</h2>
 <table>
 <thead>
 <tr>
 <th>ポイント</th>
-<th>内容</th>
+<th>ざっくり理解</th>
+<th>正確な説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>線形活性化の限界</td>
-<td>合成が線形となり隠れ層が無意味になる（例外: ボトルネック→PCA相当）</td>
+<td>普遍近似</td>
+<td>二層ネットワークはかなり万能</td>
+<td>幅広い活性化関数のもとで、任意の連続関数を任意精度で近似できる</td>
 </tr>
 <tr>
-<td>sigmoid/tanh の問題</td>
-<td>大きな <span class="arithmatex">\(\|a\|\)</span> で勾配が指数的に消失（vanishing gradients）</td>
+<td>隠れユニット</td>
+<td>小さな部品を組み合わせる</td>
+<td>第1層が基底関数を作り、第2層がそれらを線形結合する</td>
 </tr>
 <tr>
-<td>Softplus の位置づけ</td>
-<td>ReLU の滑らか版；大きな正値で <span class="arithmatex">\(h(a)\approx a\)</span> により勾配を保持</td>
+<td>存在保証</td>
+<td>近似できる重みはある</td>
+<td>学習アルゴリズムがその重みを見つける保証はない</td>
 </tr>
 <tr>
-<td>ReLU の優位性</td>
-<td>正側で勾配 = 1、計算安価、初期化頑健、低精度実装に適合</td>
+<td>ユニット数</td>
+<td>部品が多いほど細かく作れる</td>
+<td>場合によっては指数的に多くの隠れユニットが必要</td>
 </tr>
 <tr>
-<td>Leaky/Parametric ReLU</td>
-<td>Dying ReLU への対処；負側にも非ゼロ勾配を与える</td>
+<td>深さの意味</td>
+<td>二層で足りるなら深層はいらない、ではない</td>
+<td>深いネットワークは階層的表現により効率よく関数を表せることがある</td>
 </tr>
 </tbody>
 </table>
-<p><strong>結論：</strong> 隠れユニットの活性化関数は非線形かつ微分可能であればよいが、実用的には勾配消失を避けることが最重要。ReLU の登場（2012年）は深層学習の実用化を大きく前進させた。活性化関数の選択は表現力だけでなく、学習ダイナミクス全体に影響する。</p>
+<p><strong>結論：</strong> 普遍近似定理は、ニューラルネットワークが豊かな表現力を持つことを理論的に支える。ただし、その保証は「存在」に関するものであり、実際の学習可能性・必要なユニット数・汎化性能までは保証しない。この限界が、活性化関数の選択や深いネットワーク設計を考える動機になる。</p>
 <hr />
-<h2 id="_9">担当者の議論・疑問点</h2>
+<h2 id="_12">担当者の議論・疑問点</h2>
 <ul>
-<li><strong>Dying ReLU の発生条件を定量的に把握したい</strong>：学習率・重み初期化（Xavier/He）・バッチサイズのどの組み合わせが Dying ReLU を引き起こしやすいか？</li>
-<li><strong>sigmoid と tanh が実質等価（<span class="arithmatex">\(\tanh(a)=2\sigma(2a)-1\)</span>）でも学習が等価でない理由</strong>：具体的にどの初期化スキームを変えれば同等になるか？（Exercise 6.4 との関連）</li>
-<li><strong>Parametric ReLU の <span class="arithmatex">\(\alpha_j\)</span> 学習の実際</strong>：ユニットごとに異なる <span class="arithmatex">\(\alpha_j\)</span> に収束するか、それとも均質化するか？実験的知見は？</li>
-<li><strong>Softplus vs ReLU の選択基準</strong>：滑らかさが必要な場面（二階微分が必要な物理インフォームドニューラルネット等）での使い分け</li>
-<li><strong>§6.2.4 との接続</strong>：tanh が奇関数であることが符号反転対称性の前提。ReLU で同じ議論はできるか？（ReLU は奇関数でない）</li>
+<li><strong>「存在する重み」と「学習で見つかる重み」のギャップ</strong>：普遍近似定理で保証される重みは、実際の SGD でどれほど見つけやすいのか？</li>
+<li><strong>深さによる効率化の具体例</strong>：二層では指数的に多くの隠れユニットが必要だが、深層なら少ないパラメータで表せる関数の例を整理したい。</li>
+<li><strong>不連続関数の扱い</strong>：図 6.10 のステップ関数のような不連続に近い関数を、連続な活性化関数でどの意味で近似しているのか？</li>
+<li><strong>汎化との関係</strong>：表現力が高いほど訓練データには合うが、未知データに強いとは限らない。この点を正則化やデータ量とどう結びつけて考えるべきか？</li>
+<li><strong>§6.2.3 との接続</strong>：普遍近似の定理では幅広い活性化関数が許される一方、実用では ReLU が強い。この差は表現力ではなく最適化のしやすさに由来するのか？</li>
 </ul>
 
 
