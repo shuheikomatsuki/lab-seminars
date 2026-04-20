@@ -18,7 +18,7 @@
 |------|--------|
 | ドキュメントサイト | MkDocs + Material テーマ |
 | スライド生成 | Marp（Markdown → HTML/PDF） |
-| 図の記述 | Mermaid（フローチャート・シーケンス図）、D2（アーキテクチャ図）|
+| 図の記述 | Mermaid |
 | 数式 | MathJax / KaTeX（LaTeX 記法）|
 | パッケージ管理 | uv（Python 3.11+）|
 | CI/CD | GitHub Actions → GitHub Pages |
@@ -133,8 +133,7 @@ lab-seminars/
 │           ├── index.md             # 解説記事
 │           ├── slides.md            # Marpスライド
 │           └── diagrams/
-│               ├── architecture.mmd # Mermaid概要図
-│               └── *.d2             # D2図（任意）
+│               └── architecture.mmd # Mermaid概要図
 ├── .claude/skills/
 │   ├── add-seminar-session/
 │   │   ├── SKILL.md                 # スキル実行仕様

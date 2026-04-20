@@ -133,9 +133,8 @@ lab-seminars/
 
 `main` ブランチにプッシュすると GitHub Actions が自動的に：
 
-1. D2 図を PNG に変換
-2. MkDocs でサイトをビルド
-3. GitHub Pages (`gh-pages` ブランチ) にデプロイ
+1. MkDocs でサイトをビルド
+2. GitHub Pages (`gh-pages` ブランチ) にデプロイ
 
 ---
 

@@ -16,17 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ── D2 ダイアグラム → PNG ────────────────────────────────────
-      - name: Install D2
-        run: curl -fsSL https://d2lang.com/install.sh | sh -s --
-
-      - name: Build D2 diagrams
-        run: |
-          find docs/sessions -name "*.d2" | while read f; do
-            echo "Building: $f"
-            d2 "$f" "${f%.d2}.png"
-          done
-
       # ── MkDocs ビルド ────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
