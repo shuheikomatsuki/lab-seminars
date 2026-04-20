@@ -16,23 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ── Marp スライド → HTML + PDF ──────────────────────────────
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install Marp CLI
-        run: npm install -g @marp-team/marp-cli
-
-      - name: Build Marp slides
-        run: |
-          while IFS= read -r f; do
-            dir=$(dirname "$f")
-            echo "Building: $f"
-            marp "$f" --html --allow-local-files -o "$dir/slides.html" </dev/null
-          done < <(find docs/sessions -name "slides.md")
-
       # ── D2 ダイアグラム → PNG ────────────────────────────────────
       - name: Install D2
         run: curl -fsSL https://d2lang.com/install.sh | sh -s --
