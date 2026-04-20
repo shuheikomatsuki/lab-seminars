@@ -12,7 +12,9 @@ default_presenter: 駒月柊平
 #   pdf_sources:
 #     dl-book: /Users/yourname/books/deep_learning.pdf
 #     transformer-paper: /Users/yourname/papers/attention.pdf
-pdf_sources: {}
+# pdf_sources: {}
+pdf_sources:
+  dl-book: /Users/komashuhei/tlab/text/DeepLearning_Text.pdf
 
 # /extract-pdf-pages のデフォルト出力ディレクトリ（プロジェクトルートからの相対パス）
 pdf_output_dir: pdfs
