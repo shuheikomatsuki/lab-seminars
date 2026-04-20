@@ -451,17 +451,6 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        スライド
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         概要
       
     </span>
@@ -482,7 +471,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         二層ネットワークの計算グラフ
@@ -493,7 +482,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         バイアスの吸収とパラメータ行列
@@ -532,7 +521,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         主要な活性化関数一覧
@@ -593,7 +582,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         総対称性因子
@@ -609,7 +598,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -620,7 +609,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         感想・議論
@@ -740,17 +729,6 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        スライド
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         概要
       
     </span>
@@ -771,7 +749,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         二層ネットワークの計算グラフ
@@ -782,7 +760,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         バイアスの吸収とパラメータ行列
@@ -821,7 +799,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         主要な活性化関数一覧
@@ -882,7 +860,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         総対称性因子
@@ -898,7 +876,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         まとめ
@@ -909,7 +887,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         感想・議論
@@ -941,12 +919,7 @@
 <strong>担当:</strong> 駒月柊平
 <strong>日付:</strong> 2026-04-26</p>
 <hr />
-<h2 id="_1">スライド</h2>
-<ul>
-<li><a href="slides.html">スライド (HTML)</a></li>
-</ul>
-<hr />
-<h2 id="_2">概要</h2>
+<h2 id="_1">概要</h2>
 <p>線形モデルでは基底関数 <span class="arithmatex">\(\phi_j(\mathbf{x})\)</span> を事前に固定する必要があり、高次元・大規模データへの適用が困難でした。ニューラルネットワークの核心的アイデアは、基底関数自体にも学習可能なパラメータを持たせ、係数 <span class="arithmatex">\(\{w_j\}\)</span> と合わせて勾配法で最適化することです。本節では二層ネットワークの数式的構造を丁寧に導出し、普遍近似定理・活性化関数の選択・重み空間の対称性という三つの基礎的トピックを扱います。</p>
 <p>ネットワーク全体の関数はコンパクトに行列表記できます：</p>
 <div class="arithmatex">\[\mathbf{y}(\mathbf{x}, \mathbf{w}) = f\!\left(\mathbf{W}^{(2)} h\!\left(\mathbf{W}^{(1)} \mathbf{x}\right)\right)\]</div>
@@ -960,7 +933,7 @@
 </ul>
 <hr />
 <h2 id="62">6.2 ネットワークの前向き伝播</h2>
-<h3 id="_3">二層ネットワークの計算グラフ</h3>
+<h3 id="_2">二層ネットワークの計算グラフ</h3>
 <p>入力 <span class="arithmatex">\(x_1, \ldots, x_D\)</span> から出力 <span class="arithmatex">\(y_1, \ldots, y_K\)</span> への計算は三段階で進みます。</p>
 <p><strong>第1層：前活性化（pre-activation）</strong></p>
 <div class="arithmatex">\[a_j^{(1)} = \sum_{i=1}^{D} w_{ji}^{(1)} x_i + w_{j0}^{(1)}, \quad j = 1, \ldots, M\]</div>
@@ -982,7 +955,7 @@
     style X fill:#dbeafe
     style Z fill:#fef9c3
     style Y fill:#dcfce7</code></pre>
-<h3 id="_4">バイアスの吸収とパラメータ行列</h3>
+<h3 id="_3">バイアスの吸収とパラメータ行列</h3>
 <p>バイアス <span class="arithmatex">\(w_{j0}^{(1)}\)</span> は、<span class="arithmatex">\(x_0 = 1\)</span> に固定した追加入力変数を導入することで重み行列に吸収できます：</p>
 <div class="arithmatex">\[a_j = \sum_{i=0}^{D} w_{ji}^{(1)} x_i\]</div>
 <p>これにより、ネットワーク全体がシンプルな行列積で書けます（式 6.12）。</p>
@@ -1034,7 +1007,7 @@
 <p>詳細記事: <a href="6-2-3/">6.2.3 隠れユニット活性化関数</a></p>
 </blockquote>
 <p>出力層の活性化関数はタスク（回帰・分類など）によって決まります。一方、隠れユニットの活性化関数に求められる唯一の条件は<strong>微分可能であること</strong>で、多くの選択肢があります。</p>
-<h3 id="_5">主要な活性化関数一覧</h3>
+<h3 id="_4">主要な活性化関数一覧</h3>
 <table>
 <thead>
 <tr>
@@ -1114,14 +1087,14 @@
 <h3 id="permutation-symmetry">入れ替え対称性（Permutation Symmetry）</h3>
 <p>隠れユニット <span class="arithmatex">\(j\)</span> と <span class="arithmatex">\(k\)</span> に関わるすべての重みを入れ替えても、出力は不変です。</p>
 <p>→ <span class="arithmatex">\(M\)</span> 個の隠れユニットの <span class="arithmatex">\(M!\)</span> 通りの並べ替えがすべて等価。</p>
-<h3 id="_6">総対称性因子</h3>
+<h3 id="_5">総対称性因子</h3>
 <div class="arithmatex">\[\text{対称性因子} = M! \cdot 2^M\]</div>
 <div class="admonition note">
 <p class="admonition-title">実用上の影響</p>
 <p>通常の勾配学習では、この対称性は最適化の障害になりません。ただし、ベイズ的手法でネットワークサイズの事後分布を評価する際には考慮が必要です。</p>
 </div>
 <hr />
-<h2 id="_7">まとめ</h2>
+<h2 id="_6">まとめ</h2>
 <table>
 <thead>
 <tr>
@@ -1160,7 +1133,7 @@
 </table>
 <p><strong>結論：</strong> 二層ネットワークは理論上万能だが、実際には深層化と適切な活性化関数（特に ReLU）の選択が深層学習の成功の鍵となる。本節の数式的基礎は第 6.3 節以降の深層ネットワーク解析の出発点となる。</p>
 <hr />
-<h2 id="_8">感想・議論</h2>
+<h2 id="_7">感想・議論</h2>
 <ul>
 <li>ReLU の "dying" 問題はどのような条件下で深刻になるか？（初期化・学習率との関係）</li>
 <li>Leaky ReLU の <span class="arithmatex">\(\alpha\)</span> をユニットごとに学習する「Parametric ReLU」との比較</li>
